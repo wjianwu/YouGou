@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="darian.dao.ReplyDao" >
+  <resultMap id="BaseResultMap" type="darian.entity.Reply" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="topicid" property="topicid" jdbcType="INTEGER" />
+    <result column="body" property="body" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from reply
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="darian.entity.Reply" >
+    insert into reply (id, topicid, body, 
+      userid, create_on)
+    values (#{id,jdbcType=INTEGER}, #{topicid,jdbcType=INTEGER}, #{body,jdbcType=VARCHAR}, 
+      #{userid,jdbcType=INTEGER}, #{createOn,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="darian.entity.Reply" >
+    update reply
+    set topicid = #{topicid,jdbcType=INTEGER},
+      body = #{body,jdbcType=VARCHAR},
+      userid = #{userid,jdbcType=INTEGER},
+      create_on = #{createOn,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, topicid, body, userid, create_on
+    from reply
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, topicid, body, userid, create_on
+    from reply
+  </select>
+</mapper>

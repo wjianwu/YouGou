@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="darian.dao.TopicDao" >
+  <resultMap id="BaseResultMap" type="darian.entity.Topic" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="classid" property="classid" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="modified_on" property="modifiedOn" jdbcType="TIMESTAMP" />
+    <result column="hits" property="hits" jdbcType="INTEGER" />
+    <result column="reply_count" property="replyCount" jdbcType="INTEGER" />
+    <result column="img_url" property="imgUrl" jdbcType="VARCHAR" />
+    <result column="enable" property="enable" jdbcType="BIT" />
+    <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
+    <result column="body" property="body" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from topic
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="darian.entity.Topic" >
+    insert into topic (id, classid, userid, 
+      title, modified_on, hits, 
+      reply_count, img_url, enable, 
+      create_on, body)
+    values (#{id,jdbcType=INTEGER}, #{classid,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, 
+      #{title,jdbcType=VARCHAR}, #{modifiedOn,jdbcType=TIMESTAMP}, #{hits,jdbcType=INTEGER}, 
+      #{replyCount,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}, #{enable,jdbcType=BIT}, 
+      #{createOn,jdbcType=TIMESTAMP}, #{body,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="darian.entity.Topic" >
+    update topic
+    set classid = #{classid,jdbcType=INTEGER},
+      userid = #{userid,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      modified_on = #{modifiedOn,jdbcType=TIMESTAMP},
+      hits = #{hits,jdbcType=INTEGER},
+      reply_count = #{replyCount,jdbcType=INTEGER},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      enable = #{enable,jdbcType=BIT},
+      create_on = #{createOn,jdbcType=TIMESTAMP},
+      body = #{body,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, classid, userid, title, modified_on, hits, reply_count, img_url, enable, 
+    create_on, body
+    from topic
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, classid, userid, title, modified_on, hits, reply_count, img_url, enable, 
+    create_on, body
+    from topic
+  </select>
+</mapper>

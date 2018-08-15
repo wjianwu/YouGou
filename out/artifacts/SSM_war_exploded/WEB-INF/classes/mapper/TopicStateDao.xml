@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="darian.dao.TopicStateDao" >
+  <resultMap id="BaseResultMap" type="darian.entity.TopicState" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="topicid" property="topicid" jdbcType="INTEGER" />
+    <result column="statetypeid" property="statetypeid" jdbcType="INTEGER" />
+    <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from topic_state
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="darian.entity.TopicState" >
+    insert into topic_state (id, topicid, statetypeid, 
+      create_on)
+    values (#{id,jdbcType=INTEGER}, #{topicid,jdbcType=INTEGER}, #{statetypeid,jdbcType=INTEGER}, 
+      #{createOn,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="darian.entity.TopicState" >
+    update topic_state
+    set topicid = #{topicid,jdbcType=INTEGER},
+      statetypeid = #{statetypeid,jdbcType=INTEGER},
+      create_on = #{createOn,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, topicid, statetypeid, create_on
+    from topic_state
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, topicid, statetypeid, create_on
+    from topic_state
+  </select>
+</mapper>

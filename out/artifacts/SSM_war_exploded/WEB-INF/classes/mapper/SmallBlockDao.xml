@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="darian.dao.SmallBlockDao" >
+  <resultMap id="BaseResultMap" type="darian.entity.SmallBlock" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="blockid" property="blockid" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="intro" property="intro" jdbcType="VARCHAR" />
+    <result column="topic_count" property="topicCount" jdbcType="INTEGER" />
+    <result column="img_url" property="imgUrl" jdbcType="VARCHAR" />
+    <result column="enable" property="enable" jdbcType="BIT" />
+    <result column="create_by" property="createBy" jdbcType="INTEGER" />
+    <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from small_block
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="darian.entity.SmallBlock" >
+    insert into small_block (id, blockid, name, 
+      intro, topic_count, img_url, 
+      enable, create_by, create_on
+      )
+    values (#{id,jdbcType=INTEGER}, #{blockid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
+      #{intro,jdbcType=VARCHAR}, #{topicCount,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}, 
+      #{enable,jdbcType=BIT}, #{createBy,jdbcType=INTEGER}, #{createOn,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="darian.entity.SmallBlock" >
+    update small_block
+    set blockid = #{blockid,jdbcType=INTEGER},
+      name = #{name,jdbcType=VARCHAR},
+      intro = #{intro,jdbcType=VARCHAR},
+      topic_count = #{topicCount,jdbcType=INTEGER},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      enable = #{enable,jdbcType=BIT},
+      create_by = #{createBy,jdbcType=INTEGER},
+      create_on = #{createOn,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, blockid, name, intro, topic_count, img_url, enable, create_by, create_on
+    from small_block
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, blockid, name, intro, topic_count, img_url, enable, create_by, create_on
+    from small_block
+  </select>
+</mapper>
