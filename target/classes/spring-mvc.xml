@@ -10,17 +10,20 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
+    <mvc:default-servlet-handler/>
+
     <!--注解XX启动-->
     <!--扫描controller包下让springMVC认为加了@Controller都是控制器-->
     <context:component-scan base-package="darian.controller"/>
+
 
     <!--处理器映射器-->
     <mvc:annotation-driven/>
 
     <!--视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/views/" />
-        <property name="suffix" value=".jsp" />
+        <property name="prefix" value="/html/" />
+        <property name="suffix" value=".html" />
     </bean>
 
 </beans>

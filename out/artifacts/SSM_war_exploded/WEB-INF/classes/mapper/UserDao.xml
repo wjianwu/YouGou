@@ -61,4 +61,8 @@
     topic_count, reply_count, amount, enable, create_on
     from user
   </select>
+  <select id="selectByNameAndPwd" resultMap="BaseResultMap">
+    select * from user
+    where email = #{username} and password = #{password}
+  </select>
 </mapper>

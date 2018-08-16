@@ -13,8 +13,6 @@
     <!--自动扫描-->
     <context:component-scan base-package="darian"/>
 
-    <mvc:default-servlet-handler/>
-
     <!--引入配置文件-->
     <bean id="prop" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:db.properties"/>
