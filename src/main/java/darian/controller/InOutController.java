@@ -31,7 +31,7 @@ public class InOutController {
 
         if(user != null){
             session.setAttribute("user",user);
-            return "redirect:/html/index.html";
+            return "redirect:/html/index-2.html";
         }else {
             return "user/login";
         }
@@ -50,10 +50,17 @@ public class InOutController {
         boolean flag = userService.registerVerify(user);
 
         if(flag){
-            return "redirect:/html/index.html";
+            return "redirect:/html/index-2.html";
         }else {
             return "redirect:/views/404.html";
         }
 
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        session.invalidate();
+        return "redirect:/html/index.html";
     }
 }
