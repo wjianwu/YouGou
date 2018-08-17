@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>帐号设置</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="fly,layui,前端社区">
-    <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
+    <meta name="keywords" content="知识社区">
+    <meta name="description" content="YouGou社区给你提供强大的知识库">
     <link rel="stylesheet" href="../../res/layui/css/layui.css">
     <link rel="stylesheet" href="../../res/css/global.css">
     <script src="../../js/jquery-3.2.1.min.js"></script>
@@ -15,7 +15,7 @@
 
 <div class="fly-header layui-bg-black">
     <div class="layui-container">
-        <a class="fly-logo" href="/">
+        <a class="fly-logo" href="/html/index-2.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
@@ -26,7 +26,7 @@
                 <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
             </li>
             <li class="layui-nav-item">
-                <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+                <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
             </li>
         </ul>
 
@@ -37,7 +37,7 @@
                     <cite id="citeText" class="layui-hide-xs">贤心</cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
-                    <img id="headUrl" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+                    <img id="headUrl">
                 </a>
                 <dl class="layui-nav-child">
                     <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
@@ -147,14 +147,15 @@
                             <button id="uploadHead" type="button" class="layui-btn upload-img">
                                 <i class="layui-icon">&#xe67c;</i>上传头像
                             </button>
-                            <img id="bigHead" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+                            <img id="bigHead"
+                                 src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
                             <span class="loading"></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="layui-form layui-form-pane layui-tab-item">
-                    <form action="/user/repass" method="post">
+                    <form id="fo" method="post">
                         <div class="layui-form-item">
                             <label for="L_nowpass" class="layui-form-label">当前密码</label>
                             <div class="layui-input-inline">
@@ -176,13 +177,48 @@
                                 <input type="password" id="L_repass" name="repass" required lay-verify="required"
                                        autocomplete="off" class="layui-input">
                             </div>
+                            <div id="showTips" class="layui-form-mid layui-word-aux"></div>
                         </div>
                         <div class="layui-form-item">
-                            <button class="layui-btn" key="set-mine" lay-filter="*" lay-submit>确认修改</button>
+                            <button id="up" class="layui-btn">确认修改</button>
                         </div>
                     </form>
+                    <script>
+                        $("#up").click(function () {
+                            var nowpass = $("#L_nowpass").val();
+                            var newpass = $("#L_pass").val();
+                            var rewpass = $("#L_repass").val();
+                            if(nowpass == ""){
+                                alert("请输入原来的密码");
+                            }
+                            else if(newpass == ""){
+                                alert("请输入新密码");
+                            }
+                            else if(rewpass == ""){
+                                alert("请确认密码");
+                            }
+                            else if(rewpass != newpass){
+                                alert("两次密码不同，请再次输入");
+                            }
+                            else {
+                                $.ajax({
+                                    async:false,
+                                    url:"/updatePwd",
+                                    Type:"post",
+                                    data:$("#fo").serialize(),
+                                    dataType:"json",
+                                    success:function (data) {
+                                        if(data.status == "ok"){
+                                            alert("修改成功");
+                                        }else {
+                                            alert("修改失败,密码错误");
+                                        }
+                                    }
+                                });
+                            }
+                        })
+                    </script>
                 </div>
-
                 <div class="layui-form layui-form-pane layui-tab-item">
                     <ul class="app-bind">
                         <li class="fly-msg app-havebind">
@@ -212,12 +248,14 @@
 </div>
 
 <div class="fly-footer">
-    <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/"
-                                                                                target="_blank">layui.com 出品</a></p>
     <p>
-        <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-        <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-        <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+        <a href="#" target="_blank">YouGou社区</a> 2018 &copy;
+        <a href="#" target="_blank">文建武 出品(仅个人使用)</a>
+    </p>
+    <p>
+        <a href="#" target="_blank">群拍计划</a>
+        <a href="#" target="_blank">欢迎加入</a>
+        <a href="#" target="_blank">微信公众号</a>
     </p>
 </div>
 
@@ -244,36 +282,67 @@
             dataType: "json",
             success: function (data) {
                 $("#citeText").text(data.nickname + "(" + data.username + ")");
-                $("#headUrl").attr("src", "/upload/" + data.headUrl);
-                $("#bigHead").attr("src", "/upload/" + data.headUrl);
+                if (data.headUrl != null) {
+                    $("#headUrl").attr("src", data.headUrl);
+                }
+                $("#bigHead").attr("src", data.headUrl);
                 $("#L_email").attr("value", data.email);
-                $("#L_nickname").attr("value", data.nickname);
                 $("#L_username").attr("value", data.username);
-                $("input[name='sex'][value="+data.sex+"]").attr("checked",true);
+                $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
                 $("#L_sign").val(data.signature);
             }
 
         })
-    })
+    });
 
     function tt() {
-        $.post("/updateUser",$("#form1").serialize(),function (data) {
+        $.post("/updateUser", $("#form1").serialize(), function (data) {
             alert(data);
-            if(data=='ok'){
-                alert("成功")
-            }else {
-                alert("失败")
+            if (data.status == 0) {
+                alert("XX");
+                layer.msg(data.msg, {icon: 6});
+                $(function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/show",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#L_email").attr("value", data.email);
+                            $("#L_username").attr("value", data.username);
+                            $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
+                            $("#L_sign").val(data.signature);
+                        }
+                    })
+                });
+            } else {
+                layer.msg(data.msg, {icon: 5});
             }
         })
-        /*$.ajax({
+        $.ajax({
             dataType: "json",
-            url: "/updateUser",
-            data: $("#form1").serialize(),
+            url: "/updatePwd",
             Type: "POST",
             success: function (data) {
-
+                if (data.status == 0) {
+                    layer.msg(data.msg, {icon: 6});
+                    $(function () {
+                        $.ajax({
+                            type: "POST",
+                            url: "/show",
+                            dataType: "json",
+                            success: function (data) {
+                                $("#L_email").attr("value", data.email);
+                                $("#L_username").attr("value", data.username);
+                                $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
+                                $("#L_sign").val(data.signature);
+                            }
+                        })
+                    });
+                } else {
+                    layer.msg(data.msg, {icon: 5});
+                }
             }
-        })*/
+        })
     }
 </script>
 

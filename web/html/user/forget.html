@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <title>找回密码/重置密码</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="fly,layui,前端社区">
-  <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
+  <meta name="keywords" content="知识社区">
+  <meta name="description" content="YouGou社区给你提供强大的知识库">
   <link rel="stylesheet" href="../../res/layui/css/layui.css">
   <link rel="stylesheet" href="../../res/css/global.css">
+  <script src="../../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
@@ -19,13 +20,13 @@
     </a>
     <ul class="layui-nav fly-nav layui-hide-xs">
       <li class="layui-nav-item layui-this">
-        <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+        <a href="#"><i class="iconfont icon-jiaoliu"></i>交流</a>
       </li>
       <li class="layui-nav-item">
-        <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
+        <a href="#"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
       </li>
       <li class="layui-nav-item">
-        <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+        <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
       </li>
     </ul>
     
@@ -35,27 +36,26 @@
         <a class="iconfont icon-touxiang layui-hide-xs" href="user/login.html"></a>
       </li>
       <li class="layui-nav-item">
-        <a href="user/login.html">登入</a>
+        <a href="/html/user/login.html">登入</a>
       </li>
       <li class="layui-nav-item">
-        <a href="user/reg.html">注册</a>
+        <a href="/html/user/reg.html">注册</a>
       </li>
       <li class="layui-nav-item layui-hide-xs">
-        <a href="/app/qq/" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入" class="iconfont icon-qq"></a>
+        <a href="#" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入" class="iconfont icon-qq"></a>
       </li>
       <li class="layui-nav-item layui-hide-xs">
-        <a href="/app/weibo/" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})" title="微博登入" class="iconfont icon-weibo"></a>
+        <a href="#" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})" title="微博登入" class="iconfont icon-weibo"></a>
       </li>
     </ul>
   </div>
 </div>
-
 <div class="layui-container fly-marginTop">
   <div class="fly-panel fly-panel-user" pad20>
     <div class="layui-tab layui-tab-brief" lay-filter="user">
       <ul class="layui-tab-title">
         <li><a href="login.html">登入</a></li>
-        <li class="layui-this">找回密码<!--重置密码--></li>
+        <li class="layui-this">找回密码</li>
       </ul>
       <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
         <div class="layui-tab-item layui-show">
@@ -98,28 +98,49 @@
           <div class="fly-error">该重置密码链接已失效，请重新校验您的信息</div>
           <div class="fly-error">非法链接，请重新校验您的信息</div>
           -->
-          
+
           <div class="layui-form layui-form-pane">
-            <form method="post">
+            <form id="fo" method="post">
               <div class="layui-form-item">
                 <label for="L_email" class="layui-form-label">邮箱</label>
                 <div class="layui-input-inline">
                   <input type="text" id="L_email" name="email" required lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
               </div>
-              <div class="layui-form-item">
+              <!--<div class="layui-form-item">
                 <label for="L_vercode" class="layui-form-label">人类验证</label>
                 <div class="layui-input-inline">
                   <input type="text" id="L_vercode" name="vercode" required lay-verify="required" placeholder="请回答后面的问题" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid">
-                  <span style="color: #c00;">{{d.vercode}}</span>
+                  <span style="color: #c00;">1+1=?</span>
                 </div>
-              </div>
+              </div>-->
               <div class="layui-form-item">
-                <button class="layui-btn" alert="1" lay-filter="*" lay-submit>提交</button>
+                <button id="re" class="layui-btn">发送邮件</button>
               </div>
             </form>
+            <script>
+              $("#re").click(function () {
+                  $.ajax({
+                      async:false,
+                      url:"/findpass",
+                      type:"post",
+                      data:$("#fo").serialize(),
+                      dataType:"json",
+                      success:function (data) {
+                          if(data.status == "ok"){
+                              alert("邮件已发送，请注意查收");
+                          }else {
+                              alert("邮件发送失败，你的输入有误");
+                          }
+                      },
+                      error:function () {
+                          alert("出错了？")
+                      }
+                  })
+              })
+            </script>
           </div>
           
         </div>
@@ -131,11 +152,14 @@
 </div>
 
 <div class="fly-footer">
-  <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
   <p>
-    <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-    <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-    <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+    <a href="#" target="_blank">YouGou社区</a> 2018 &copy;
+    <a href="#" target="_blank">文建武 出品(仅个人使用)</a>
+  </p>
+  <p>
+    <a href="#" target="_blank">群拍计划</a>
+    <a href="#" target="_blank">欢迎加入</a>
+    <a href="#" target="_blank">微信公众号</a>
   </p>
 </div>
 
