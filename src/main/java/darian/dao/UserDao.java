@@ -18,6 +18,6 @@ public interface UserDao {
     int updateByPrimaryKey(User record);
 
     //验证登录用，给定邮箱账户和密码
-    User selectByNameAndPwd(@Param("username") String username, @Param("password") String password);
+    User selectByNameAndPwd(@Param("nickname") String nickname, @Param("password") String password);
 
 }

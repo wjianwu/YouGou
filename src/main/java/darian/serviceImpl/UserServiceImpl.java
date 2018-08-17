@@ -6,9 +6,6 @@ import darian.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -21,12 +18,17 @@ public class UserServiceImpl implements UserService {
     }
 
     //验证登录
-    public User loginVerify(String username, String password) {
-        return userDao.selectByNameAndPwd(username,password);
+    public User loginVerify(String nickname, String password) {
+        return userDao.selectByNameAndPwd(nickname, password);
     }
 
     //注册
     public boolean registerVerify(User user) {
         return userDao.insert(user) > 0;
+    }
+
+    //更新资料
+    public boolean updateUser(User user) {
+        return userDao.updateByPrimaryKey(user) > 0;
     }
 }

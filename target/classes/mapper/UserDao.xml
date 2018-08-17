@@ -63,6 +63,6 @@
   </select>
   <select id="selectByNameAndPwd" resultMap="BaseResultMap">
     select * from user
-    where email = #{username} and password = #{password}
+    where nickname = #{nickname} and password = #{password}
   </select>
 </mapper>

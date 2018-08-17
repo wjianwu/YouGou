@@ -850,7 +850,7 @@
             url:"/show",
             dataType:"json",
             success:function (data) {
-                $("#citeText").text(data.username);
+                $("#citeText").text(data.nickname+"("+data.username+")");
                 $("#headUrl").attr("src","../upload/"+data.headUrl);
             }
 

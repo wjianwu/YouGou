@@ -142,4 +142,24 @@ public class User {
     public void setCreateOn(Date createOn) {
         this.createOn = createOn;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", sex='" + sex + '\'' +
+                ", headUrl='" + headUrl + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", signature='" + signature + '\'' +
+                ", topicCount=" + topicCount +
+                ", replyCount=" + replyCount +
+                ", amount=" + amount +
+                ", enable=" + enable +
+                ", createOn=" + createOn +
+                '}';
+    }
 }

@@ -52,8 +52,8 @@
     </div>
 </div>
 
-<div class="fly-home fly-panel" style="background-image: url();">
-    <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" alt="贤心">
+<div class="fly-home fly-panel">
+    <img id="bigHeadUrl" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
     <i class="iconfont icon-renzheng" title="Fly社区认证"></i>
     <h1>
         贤心
@@ -199,6 +199,7 @@ full: true
             success: function (data) {
                 $("#citeText").text(data.username);
                 $("#headUrl").attr("src", "/upload/" + data.headUrl);
+                $("#bigHeadUrl").attr("src", "/upload/" + data.headUrl);
             }
 
         })

@@ -17,17 +17,18 @@ public class InOutController {
     @Resource
     private UserService userService;
 
+    //登录控制
     @RequestMapping("/login")
     public String loginVerify(HttpServletRequest request){
 
         //邮箱账户，密码
-        String username = request.getParameter("email");
-        String password = request.getParameter("pass");
+        String nickname = request.getParameter("nickname");
+        String password = request.getParameter("password");
 
         //保存当前用户名
         HttpSession session = request.getSession();
 
-        User user = userService.loginVerify(username,password);
+        User user = userService.loginVerify(nickname,password);
 
         if(user != null){
             session.setAttribute("user",user);
@@ -37,14 +38,14 @@ public class InOutController {
         }
     }
 
+    //注册控制
     @RequestMapping("/register")
     public String register(HttpServletRequest request){
 
         //邮箱账户，密码，昵称，当前时间
         User user = new User();
-        user.setEmail(request.getParameter("email"));
-        user.setPassword(request.getParameter("pass"));
-        user.setNickname(request.getParameter("username"));
+        user.setNickname(request.getParameter("nickname"));
+        user.setPassword(request.getParameter("password"));
         user.setCreateOn(new Timestamp(new Date().getTime()));
 
         boolean flag = userService.registerVerify(user);
@@ -57,6 +58,7 @@ public class InOutController {
 
     }
 
+    //退出登录控制
     @RequestMapping("/logout")
     public String logout(HttpServletRequest request){
         HttpSession session = request.getSession();
