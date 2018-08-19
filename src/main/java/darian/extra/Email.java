@@ -1,5 +1,7 @@
 package darian.extra;
 
+import org.junit.Test;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -31,5 +33,12 @@ public class Email {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testALL(){
+        double a = 1/3;
+        System.out.println(a);
+
     }
 }

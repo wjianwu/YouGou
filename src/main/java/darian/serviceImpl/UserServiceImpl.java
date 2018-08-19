@@ -31,4 +31,20 @@ public class UserServiceImpl implements UserService {
     public boolean updateUser(User user) {
         return userDao.updateByPrimaryKey(user) > 0;
     }
+
+    @Override
+    public boolean uploadImg(int id, String filename) {
+        return userDao.uploadImg(id, filename) > 0;
+    }
+
+    @Override
+    public boolean updatePwd(int id, String nowpass) {
+        return userDao.updatePwd(id,nowpass) > 0;
+    }
+
+    //找回密码
+    @Override
+    public String getUserByEmail(String email) {
+        return userDao.selectByEmail(email);
+    }
 }

@@ -14,7 +14,7 @@
 
 <div class="fly-header layui-bg-black">
     <div class="layui-container">
-        <a class="fly-logo" href="/">
+        <a class="fly-logo" href="/html/index-2.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
@@ -33,7 +33,7 @@
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
                 <a class="fly-nav-avatar" href="javascript:;">
-                    <cite id="citeText" class="layui-hide-xs">贤心</cite>
+                    <cite id="citeText" class="layui-hide-xs"></cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
                     <img id="headUrl" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
@@ -56,9 +56,8 @@
     <img id="bigHeadUrl" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
     <i class="iconfont icon-renzheng" title="Fly社区认证"></i>
     <h1>
-        贤心
-        <i class="iconfont icon-nan"></i>
-        <!-- <i class="iconfont icon-nv"></i>  -->
+        <i id="citeText2"></i>
+        <i id="sex" class="iconfont"></i>
         <i class="layui-badge fly-badge-vip">VIP3</i>
         <!--
         <span style="color:#c00;">（管理员）</span>
@@ -71,11 +70,11 @@
 
     <p class="fly-home-info">
         <i class="iconfont icon-kiss" title="飞吻"></i><span style="color: #FF7200;">66666 飞吻</span>
-        <i class="iconfont icon-shijian"></i><span>2015-6-17 加入</span>
+        <i class="iconfont icon-shijian"></i><span id="create_on"></span>
         <i class="iconfont icon-chengshi"></i><span>来自杭州</span>
     </p>
 
-    <p class="fly-home-sign">（人生仿若一场修行）</p>
+    <p id="L_sign" class="fly-home-sign"></p>
 
     <div class="fly-sns" data-user="">
         <a href="javascript:;" class="layui-btn layui-btn-primary fly-imActive" data-type="addFriend">加为好友</a>
@@ -197,9 +196,17 @@ full: true
             url: "/show",
             dataType: "json",
             success: function (data) {
-                $("#citeText").text(data.username);
-                $("#headUrl").attr("src", "/upload/" + data.headUrl);
-                $("#bigHeadUrl").attr("src", "/upload/" + data.headUrl);
+                $("#citeText").text(data.nickname + "(" + data.username + ")");
+                $("#citeText2").text(data.nickname + "(" + data.username + ")");
+                $("#headUrl").attr("src", data.headUrl);
+                $("#bigHeadUrl").attr("src", data.headUrl);
+                $("#L_sign").text(data.signature);
+                $("#create_on").text(new Date(parseInt(data.createOn) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '));
+                if(data.sex == "男"){
+                    $("#sex").addClass("icon-nan");
+                }else {
+                    $("#sex").addClass("icon-nv");
+                }
             }
 
         })
