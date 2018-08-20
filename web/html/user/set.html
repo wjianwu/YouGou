@@ -20,7 +20,7 @@
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
             <li class="layui-nav-item layui-this">
-                <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+                <a href="/html/index-2.html"><i class="iconfont icon-jiaoliu"></i>交流</a>
             </li>
             <li class="layui-nav-item">
                 <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
@@ -34,8 +34,8 @@
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
                 <a class="fly-nav-avatar" href="javascript:;">
-                    <cite id="citeText" class="layui-hide-xs">贤心</cite>
-                    <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
+                    <cite id="citeText" class="layui-hide-xs">过滤</cite>
+                    <i class="iconfont icon-renzheng layui-hide-xs" title="这里你是看不到的"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
                     <img id="headUrl">
                 </a>
@@ -46,7 +46,18 @@
                     <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
                     </dd>
                     <hr style="margin: 5px 0;">
-                    <dd><a href="/logout" style="text-align: center;">退出</a></dd>
+                    <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>
+                    <script>
+                        function logOut() {
+                            layer.confirm("确定退出吗？",{btn:["在留一会","拂袖而去"]},function () {
+                                layer.msg("德丽莎世界第一可爱",{icon:1});
+                            },function () {
+                                layer.msg("您已退出",{icon:1})
+                                $.post("/logout");
+                                window.location.href = "/html/index.html";
+                            })
+                        }
+                    </script>
                 </dl>
             </li>
         </ul>
@@ -135,9 +146,24 @@
                             </div>
                         </div>
                         <div class="layui-form-item">
-                            <button class="layui-btn" onclick="tt()">确认修改</button>
+                            <button id="updateInfo" class="layui-btn" type="button">确认修改</button>
                         </div>
                     </form>
+                    <script>
+                        /*修改用户信息*/
+                        $("#updateInfo").click(function () {
+                            $.post("/updateUser", $("#form1").serialize(), function (data) {
+                                if (data.status == 0) {
+                                    layer.msg(data.msg, {icon: 6});
+                                    $.post("/show",function (data) {
+                                        $("#citeText").text(data.nickname + "(" + data.username + ")");
+                                    });
+                                } else {
+                                    layer.msg(data.msg, {icon: 5});
+                                }
+                            })
+                        })
+                    </script>
                 </div>
 
                 <div class="layui-form layui-form-pane layui-tab-item">
@@ -155,7 +181,7 @@
                 </div>
 
                 <div class="layui-form layui-form-pane layui-tab-item">
-                    <form id="fo" method="post">
+                    <form id="updatePwdForm" method="post">
                         <div class="layui-form-item">
                             <label for="L_nowpass" class="layui-form-label">当前密码</label>
                             <div class="layui-input-inline">
@@ -180,38 +206,41 @@
                             <div id="showTips" class="layui-form-mid layui-word-aux"></div>
                         </div>
                         <div class="layui-form-item">
-                            <button id="up" class="layui-btn">确认修改</button>
+                            <button id="updatePwd" class="layui-btn" type="button">确认修改</button>
                         </div>
                     </form>
                     <script>
-                        $("#up").click(function () {
+                        $("#updatePwd").click(function () {
                             var nowpass = $("#L_nowpass").val();
                             var newpass = $("#L_pass").val();
                             var rewpass = $("#L_repass").val();
                             if(nowpass == ""){
-                                alert("请输入原来的密码");
+                                layer.msg("请输入原先密码", {icon: 7});
                             }
                             else if(newpass == ""){
-                                alert("请输入新密码");
+                                layer.msg("请输入新密码", {icon: 7});
                             }
                             else if(rewpass == ""){
-                                alert("请确认密码");
+                                layer.msg("请确认密码", {icon: 7});
                             }
                             else if(rewpass != newpass){
-                                alert("两次密码不同，请再次输入");
+                                layer.msg("两次密码不同，请再次输入", {icon: 7});
                             }
                             else {
                                 $.ajax({
                                     async:false,
                                     url:"/updatePwd",
                                     Type:"post",
-                                    data:$("#fo").serialize(),
+                                    data:$("#updatePwdForm").serialize(),
                                     dataType:"json",
                                     success:function (data) {
+                                        $("#L_nowpass").val("");
+                                        $("#L_pass").val("");
+                                        $("#L_repass").val("");
                                         if(data.status == "ok"){
-                                            alert("修改成功");
+                                            layer.msg("修改成功", {icon: 6});
                                         }else {
-                                            alert("修改失败,密码错误");
+                                            layer.msg("修改失败,密码错误", {icon: 5});
                                         }
                                     }
                                 });
@@ -294,56 +323,6 @@
 
         })
     });
-
-    function tt() {
-        $.post("/updateUser", $("#form1").serialize(), function (data) {
-            alert(data);
-            if (data.status == 0) {
-                alert("XX");
-                layer.msg(data.msg, {icon: 6});
-                $(function () {
-                    $.ajax({
-                        type: "POST",
-                        url: "/show",
-                        dataType: "json",
-                        success: function (data) {
-                            $("#L_email").attr("value", data.email);
-                            $("#L_username").attr("value", data.username);
-                            $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
-                            $("#L_sign").val(data.signature);
-                        }
-                    })
-                });
-            } else {
-                layer.msg(data.msg, {icon: 5});
-            }
-        })
-        $.ajax({
-            dataType: "json",
-            url: "/updatePwd",
-            Type: "POST",
-            success: function (data) {
-                if (data.status == 0) {
-                    layer.msg(data.msg, {icon: 6});
-                    $(function () {
-                        $.ajax({
-                            type: "POST",
-                            url: "/show",
-                            dataType: "json",
-                            success: function (data) {
-                                $("#L_email").attr("value", data.email);
-                                $("#L_username").attr("value", data.username);
-                                $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
-                                $("#L_sign").val(data.signature);
-                            }
-                        })
-                    });
-                } else {
-                    layer.msg(data.msg, {icon: 5});
-                }
-            }
-        })
-    }
 </script>
 
 </body>

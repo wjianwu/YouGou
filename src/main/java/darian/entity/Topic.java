@@ -11,6 +11,8 @@ public class Topic {
 
     private String title;
 
+    private Integer rank;
+
     private Date modifiedOn;
 
     private Integer hits;
@@ -55,6 +57,14 @@ public class Topic {
 
     public void setTitle(String title) {
         this.title = title == null ? null : title.trim();
+    }
+
+    public Integer getRank() {
+        return rank;
+    }
+
+    public void setRank(Integer rank) {
+        this.rank = rank;
     }
 
     public Date getModifiedOn() {

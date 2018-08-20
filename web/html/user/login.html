@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="layui-form-item">
-                                <label for="L_vercode" class="layui-form-label">人类验证</label>
+                                <label for="L_vercode" class="layui-form-label">验证码</label>
                                 <div class="layui-input-inline">
                                     <input type="text" id="L_vercode" name="vercode" required lay-verify="required"
                                            placeholder="请回答后面的问题" autocomplete="off" class="layui-input">
@@ -126,19 +126,6 @@
 
 <script src="../../res/layui/layui.js"></script>
 <script src="../../js/jquery-3.2.1.min.js"></script>
-<script>
-    $(function () {
-        $("#L_vercode").blur(function () {
-            var t = document.getElementById("L_vercode").value;
-            if (t != "2") {
-                layer.msg('我怀疑你不是人类', {
-                    time: 20000,
-                    btn: ['哦']
-                });
-            }
-        })
-    })
-</script>
 <script>
     layui.cache.page = 'user';
     layui.cache.user = {

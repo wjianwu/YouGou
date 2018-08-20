@@ -1,6 +1,8 @@
 package darian.dao;
 
+
 import darian.entity.Topic;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,4 +16,6 @@ public interface TopicDao {
     List<Topic> selectAll();
 
     int updateByPrimaryKey(Topic record);
+
+    List selectAllById(@Param("userId") int userId);
 }

@@ -19,7 +19,7 @@
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
             <li class="layui-nav-item layui-this">
-                <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+                <a href="/html/index-2.html"><i class="iconfont icon-jiaoliu"></i>交流</a>
             </li>
             <li class="layui-nav-item">
                 <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
@@ -69,7 +69,7 @@
     <p style="padding: 10px 0; color: #5FB878;">认证信息：layui 作者</p>
 
     <p class="fly-home-info">
-        <i class="iconfont icon-kiss" title="飞吻"></i><span style="color: #FF7200;">66666 飞吻</span>
+        <i class="iconfont icon-kiss" title="飞吻"></i><span style="color: #FF7200;" id="rank"></span>
         <i class="iconfont icon-shijian"></i><span id="create_on"></span>
         <i class="iconfont icon-chengshi"></i><span>来自杭州</span>
     </p>
@@ -198,10 +198,11 @@ full: true
             success: function (data) {
                 $("#citeText").text(data.nickname + "(" + data.username + ")");
                 $("#citeText2").text(data.nickname + "(" + data.username + ")");
+                $("#rank").text(data.amount + "贡献点");
                 $("#headUrl").attr("src", data.headUrl);
                 $("#bigHeadUrl").attr("src", data.headUrl);
                 $("#L_sign").text(data.signature);
-                $("#create_on").text(new Date(parseInt(data.createOn) * 1000).toLocaleString().replace(/:\d{1,2}$/,' '));
+                $("#create_on").text(new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/,' '));
                 if(data.sex == "男"){
                     $("#sex").addClass("icon-nan");
                 }else {
