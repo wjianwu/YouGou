@@ -1,6 +1,7 @@
 package darian.controller;
 
 import darian.entity.User;
+import darian.service.TopicService;
 import darian.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,7 +54,8 @@ public class UploadController {
         File dest = new File(path + filename);
 
         //上传文件名到数据库
-        if (userService.uploadImg(user.getId(), "/images/" + filename)) {
+		//更新头像的同时更新帖子表里面对应的头像
+        if (userService.uploadImg(user.getId(), "/images/" + filename)&&userService.updateTopicImg(user.getId(), "/images/" + filename)) {
             //顺便把session里的值修改一下
             user.setHeadUrl("/images/"+filename);
             try {

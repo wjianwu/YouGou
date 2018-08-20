@@ -1,5 +1,6 @@
 package darian.serviceImpl;
 
+import darian.dao.TopicDao;
 import darian.dao.UserDao;
 import darian.entity.User;
 import darian.service.UserService;
@@ -12,6 +13,8 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private UserDao userDao;
+    @Resource
+    private TopicDao topicDao;
 
     public User getUserById(int id) {
         return userDao.selectByPrimaryKey(id);
@@ -35,6 +38,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean uploadImg(int id, String filename) {
         return userDao.uploadImg(id, filename) > 0;
+    }
+
+	//更新头像的同时更新帖子表里面对应的头像
+    @Override
+    public boolean updateTopicImg(int id, String filename) {
+        return topicDao.updateTopicImg(id,filename) > 0;
     }
 
     @Override

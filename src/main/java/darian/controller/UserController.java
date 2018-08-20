@@ -27,6 +27,7 @@ public class UserController {
 
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
+		System.out.println(user);
         return userService.getUserById(user.getId());
     }
 
