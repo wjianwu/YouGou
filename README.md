@@ -1,8 +1,6 @@
 # YouGou(社区)
 Use ssm to do a BBS project <br>
-(以下截图都在upload文件夹下)uuid.(jpeg/png)
-##login.html<br>
-![login](https://raw.githubusercontent.com/wjianwu/YouGou/master/web/upload/0a6c793cb7654ada821a2c0e0d9110a6.png)
+(以下截图都在upload文件夹下)uuid.(jpeg/png)<br>
 ##register.html
 ![register](https://raw.githubusercontent.com/wjianwu/YouGou/master/web/upload/58a970f346b149bd94130a68a1df29ef.png)
 ##index.html(no-login)
