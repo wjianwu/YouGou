@@ -6,34 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="2018/8/17 second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" afterDir="false" />
+    <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/entity/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/entity/Topic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/entity/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/entity/Topic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/case/case.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/case/case.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/common/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/common/link.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/res/mods/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/mods/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/0d8389f4c2bf47709111ac280a050c20.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/1cd3b8432e884a9c9e434c79e45fb1e8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload/37d525a3cd274192912abbc3ae67beda.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload/8187c744afc6445eb82fb1bd23d84de4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload/f0667b35bce542d4a0b136d4f7046c42.jpeg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,12 +67,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/html/index-2.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/web/html/user/home.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ReplyDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SmallBlockDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicStateDao.xml" />
@@ -145,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" />
         <option value="$PROJECT_DIR$/web/html/index-2.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -235,99 +214,19 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="jie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -595,7 +494,7 @@
       <workItem from="1534600556709" duration="1316000" />
       <workItem from="1534676775481" duration="11408000" />
       <workItem from="1534724814277" duration="34836000" />
-      <workItem from="1534769491270" duration="187000" />
+      <workItem from="1534769491270" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -646,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534688128433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2018/8/20 first commit">
+      <created>1534769761740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534769761740</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -682,7 +588,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178548000" />
+    <option name="totallyTimeSpent" value="179892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -700,22 +606,22 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39906833" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3219512" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.32352942" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.41149068" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.1669107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.25768667" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3219512" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32868218" />
@@ -734,7 +640,8 @@
     <MESSAGE value="2018/8/17 first commit" />
     <MESSAGE value="2018/8/17 second commit" />
     <MESSAGE value="2018/8/19 first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/8/19 first commit" />
+    <MESSAGE value="2018/8/20 first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/8/20 first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,20 +653,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/res/layui/layui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="642" selection-start-line="1" selection-start-column="642" selection-end-line="1" selection-end-column="642" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/layui/lay/modules/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="408" selection-start-line="1" selection-start-column="408" selection-end-line="1" selection-end-column="408" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/res/images/avatar/1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -862,6 +755,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-630">
           <caret line="187" column="83" selection-start-line="187" selection-start-column="76" selection-end-line="187" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#1;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#2;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#dd#3;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,6 +810,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="73" column="43" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="43" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -938,6 +841,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,6 +851,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,6 +862,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#1;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#2;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#dd#3;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,6 +919,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,6 +929,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,6 +939,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="204" column="112" selection-start-line="204" selection-start-column="37" selection-end-line="204" selection-end-column="112" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,6 +975,19 @@
             <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#24173#24179#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload/37d525a3cd274192912abbc3ae67beda.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="66">
+            <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
