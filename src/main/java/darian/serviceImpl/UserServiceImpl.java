@@ -56,4 +56,5 @@ public class UserServiceImpl implements UserService {
     public String getUserByEmail(String email) {
         return userDao.selectByEmail(email);
     }
+
 }

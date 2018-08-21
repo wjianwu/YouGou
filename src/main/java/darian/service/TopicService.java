@@ -15,4 +15,10 @@ public interface TopicService {
 	//查询所有帖子（不带分类，但只查前十条，按时间）
 	List getAll();
 
+	//按分类查询所有
+	List getAllByClass(int classId);
+
+	//结贴未结帖
+	List getByEnable(int enable);
+
 }

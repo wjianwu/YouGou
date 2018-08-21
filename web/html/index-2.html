@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../res/css/global.css">
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../res/layui/layui.js"></script>
+    <script src="../js/ShowByClassId.js"></script>
 </head>
 <body>
 
@@ -34,8 +35,8 @@
             <!-- 登入后的状态 -->
 
             <li class="layui-nav-item">
-                <a class="fly-nav-avatar" href="javascript:;">
-                    <cite class="layui-hide-xs" id="citeText">NULL</cite>
+                <a class="fly-nav-avatar" href="javascript:void(0)">
+                    <cite class="layui-hide-xs" id="citeText">游客</cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
                     <img id="headUrl">
@@ -47,17 +48,6 @@
                     </dd>
                     <hr style="margin: 5px 0;">
                     <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>
-                    <script>
-                        function logOut() {
-                            layer.confirm("确定退出吗？",{btn:["在留一会","拂袖而去"]},function () {
-                                layer.msg("德丽莎世界第一可爱",{icon:1});
-                            },function () {
-                                layer.msg("您已退出",{icon:1})
-                                $.post("/logout");
-                                window.location.href = "/html/index.html";
-                            })
-                        }
-                    </script>
                 </dl>
             </li>
 
@@ -103,7 +93,9 @@
                     <a href="#signin" class="layui-hide-sm layui-show-xs-block fly-right" id="LAY_goSignin"
                        style="color: #FF5722;">去签到</a>
                 </div>
-                <ul class="fly-list">
+
+                <!--置顶-->
+                <!--<ul class="fly-list">
                     <li>
                         <a href="user/home.html" class="fly-avatar">
                             <img src="/res/images/avatar/1.jpg"
@@ -128,10 +120,10 @@
               </span>
                         </div>
                         <div class="fly-list-badge">
-                            <!--
+                            &lt;!&ndash;
                             <span class="layui-badge layui-bg-black">置顶</span>
                             <span class="layui-badge layui-bg-red">精帖</span>
-                            -->
+                            &ndash;&gt;
                         </div>
                     </li>
                     <li>
@@ -146,24 +138,24 @@
                         <div class="fly-list-info">
                             <a href="user/home.html" link>
                                 <cite>贤心</cite>
-                                <!--
+                                &lt;!&ndash;
                                 <i class="iconfont icon-renzheng" title="认证信息：XXX"></i>
                                 <i class="layui-badge fly-badge-vip">VIP3</i>
-                                -->
+                                &ndash;&gt;
                             </a>
                             <span>2017-11-30</span>
 
                             <span class="fly-list-kiss layui-hide-xs" title="悬赏飞吻"><i class="iconfont icon-kiss"></i> 60</span>
-                            <!--<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>-->
+                            &lt;!&ndash;<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>&ndash;&gt;
                             <span class="fly-list-nums">
                 <i class="iconfont icon-pinglun1" title="回答"></i> 66
               </span>
                         </div>
                         <div class="fly-list-badge">
-                            <!--
+                            &lt;!&ndash;
                             <span class="layui-badge layui-bg-black">置顶</span>
                             <span class="layui-badge layui-bg-red">精帖</span>
-                            -->
+                            &ndash;&gt;
                         </div>
                     </li>
                     <li>
@@ -178,24 +170,24 @@
                         <div class="fly-list-info">
                             <a href="user/home.html" link>
                                 <cite>贤心</cite>
-                                <!--
+                                &lt;!&ndash;
                                 <i class="iconfont icon-renzheng" title="认证信息：XXX"></i>
                                 <i class="layui-badge fly-badge-vip">VIP3</i>
-                                -->
+                                &ndash;&gt;
                             </a>
                             <span>刚刚</span>
 
                             <span class="fly-list-kiss layui-hide-xs" title="悬赏飞吻"><i class="iconfont icon-kiss"></i> 60</span>
-                            <!--<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>-->
+                            &lt;!&ndash;<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>&ndash;&gt;
                             <span class="fly-list-nums">
                 <i class="iconfont icon-pinglun1" title="回答"></i> 66
               </span>
                         </div>
                         <div class="fly-list-badge">
-                            <!--
+                            &lt;!&ndash;
                             <span class="layui-badge layui-bg-black">置顶</span>
                             <span class="layui-badge layui-bg-red">精帖</span>
-                            -->
+                            &ndash;&gt;
                         </div>
                     </li>
                     <li>
@@ -210,75 +202,48 @@
                         <div class="fly-list-info">
                             <a href="user/home.html" link>
                                 <cite>贤心</cite>
-                                <!--
+                                &lt;!&ndash;
                                 <i class="iconfont icon-renzheng" title="认证信息：XXX"></i>
                                 <i class="layui-badge fly-badge-vip">VIP3</i>
-                                -->
+                                &ndash;&gt;
                             </a>
                             <span>刚刚</span>
 
                             <span class="fly-list-kiss layui-hide-xs" title="悬赏飞吻"><i class="iconfont icon-kiss"></i> 60</span>
-                            <!--<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>-->
+                            &lt;!&ndash;<span class="layui-badge fly-badge-accept layui-hide-xs">已结</span>&ndash;&gt;
                             <span class="fly-list-nums">
                 <i class="iconfont icon-pinglun1" title="回答"></i> 66
               </span>
                         </div>
                         <div class="fly-list-badge">
-                            <!--
+                            &lt;!&ndash;
                             <span class="layui-badge layui-bg-black">置顶</span>
                             <span class="layui-badge layui-bg-red">精帖</span>
-                            -->
+                            &ndash;&gt;
                         </div>
                     </li>
-                </ul>
+                </ul>-->
             </div>
 
             <div class="fly-panel" style="margin-bottom: 0;">
 
-                <div class="fly-panel-title fly-filter">
-                    <a href="" class="layui-this">综合</a>
+                <div id="div1" class="fly-panel-title fly-filter">
+                    <a id="zh" href="javascript:void(0)" onclick="showAll(0)" class="layui-this">综合</a>
                     <span class="fly-mid"></span>
-                    <a href="">未结</a>
+                    <a id="wj" href="javascript:void(0)" onclick="showByEnable(0)">未结</a>
                     <span class="fly-mid"></span>
-                    <a href="">已结</a>
+                    <a id="yj" href="javascript:void(0)" onclick="showByEnable(1)">已结</a>
                     <span class="fly-mid"></span>
-                    <a href="">精华</a>
+                    <a href="javascript:void(0)">精华</a>
                     <span class="fly-filter-right layui-hide-xs">
-                        <a href="" class="layui-this">按最新</a>
+                        <a href="javascript:void(0)" class="layui-this">按最新</a>
                         <span class="fly-mid"></span>
-                        <a href="">按热议</a>
+                        <a href="javascript:void(0)">按热议</a>
                     </span>
                 </div>
 
                 <ul id="ulShow" class="fly-list">
-                    <script>
-                        $(function () {
-                            $.ajax({
-                                type:"POST",
-                                url:"/showAll",
-                                dataType:"json",
-                                success:function (data) {
-                                    var string = "";
-                                    for(var i=0;i<data.length;i++){
-                                        if(data[i].enable == 1){data[i].enable = "未完";}else {data[i].enable = "已结";}
-                                        string = string +
-                                            "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
-                                            "<h2><a class=\"layui-badge\">"+data[i].classid+"(分类ID)</a><a href=\"jie/detail.html\">"+data[i].title+"</a></h2>\n" +
-                                            "<div class=\"fly-list-info\">\n" +
-                                            "<a href=\"user/home.html\" link><cite>"+data[i].userid+"(用户ID)</cite><i class=\"iconfont icon-renzheng\" title=\"认证信息：XXX\"></i><i class=\"layui-badge fly-badge-vip\">VIP3</i></a>\n" +
-                                            "<span>"+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
-                                            "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\"><i class=\"iconfont icon-kiss\"></i>"+data[i].rank+"</span>\n" +
-                                            "<span class=\"layui-badge fly-badge-accept layui-hide-xs\">"+data[i].enable+"</span>\n" +
-                                            "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i> "+data[i].replyCount+"</span>\n" +
-                                            "</div>\n" +
-                                            "<div class=\"fly-list-badge\"></div></li>";/*<span class="layui-badge layui-bg-red">精帖</span>*/
-                                    }
-
-                                    $("#ulShow").html(string);
-                                }
-                            })
-                        })
-                    </script>
+                    <!--此处显示发过的帖子-->
                 </ul>
 
                 <div style="text-align: center">
@@ -324,9 +289,9 @@
                 <div class="fly-panel-title">
                     签到
                     <i class="fly-mid"></i>
-                    <a href="javascript:;" class="fly-link" id="LAY_signinHelp">说明</a>
+                    <a href="javascript:void(0)" class="fly-link" id="LAY_signinHelp">说明</a>
                     <i class="fly-mid"></i>
-                    <a href="javascript:;" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>
+                    <a href="javascript:void(0)" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>
                     <span class="fly-signin-days">已连续签到<cite>16</cite>天</span>
                 </div>
                 <div class="fly-panel-main fly-signin-main">
@@ -489,6 +454,7 @@
     </div>
 </div>
 
+<!--页脚-->
 <div class="fly-footer">
     <p>
         <a href="#" target="_blank">YouGou社区</a> 2018 &copy;
@@ -519,6 +485,10 @@
     }).use('fly');
 
     $(function (){
+        $("#div1").children().click(function () {
+            $(this).siblings("a").removeClass("layui-this");
+            $(this).addClass("layui-this");
+        });
         $.ajax({
             type:"POST",
             url:"/show",
@@ -530,6 +500,35 @@
                 }
             }
 
+        });
+        $.ajax({
+            type:"POST",
+            url:"/showAll",
+            dataType:"json",
+            success:function (data) {
+                var string = "";
+                for(var i=0;i<data.length;i++){
+
+                    var insertClass = "fly-badge-accept";
+
+                    if(data[i].enable == 1){data[i].enable = "已结";}else {data[i].enable = "未完";insertClass = "";}
+
+                    string = string +
+                        "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
+                        "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html\">"+data[i].title+"</a></h2>\n" +
+                        "<div class=\"fly-list-info\">\n" +
+                        "<a href=\"user/home.html\" link><cite id=\"cite"+i+"\">"+data[i].userName+"</cite></a>\n" +
+                        "<span>发表于："+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
+                        "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\">悬赏fly点<i class=\"iconfont icon-kiss\"></i>"+data[i].rank+"</span>\n" +
+                        "状态：<span class=\"layui-badge "+insertClass +" layui-hide-xs\">"+data[i].enable+"</span>\n" +
+                        "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i> "+data[i].replyCount+"</span>\n" +
+                        "</div>\n" +
+                        "<div class=\"fly-list-badge\"></div></li>";
+                    /*<span class="layui-badge layui-bg-red">精帖</span>*/
+                    /*<i class="iconfont icon-renzheng" title="认证信息：XXX"></i><i class="layui-badge fly-badge-vip">VIP3</i>*/
+                }
+                $("#ulShow").html(string);
+            }
         })
     })
 </script>

@@ -28,4 +28,16 @@ public class TopicServiceImpl implements TopicService {
 	public List getAll() {
 		return topicDao.selectAll();
 	}
+
+	@Override
+	public List getAllByClass(int classId) {
+		return topicDao.selectAllByClassId(classId);
+	}
+
+	@Override
+	public List getByEnable(int enable) {
+		return topicDao.selectByEnable(enable == 1);
+	}
+
+
 }

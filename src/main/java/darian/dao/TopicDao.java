@@ -21,4 +21,10 @@ public interface TopicDao {
 
     //更新头像的同时更新帖子表里面对应的头像
     int updateTopicImg(@Param("userId")int userId,@Param("filename")String filename);
+
+    //按分类查询所有
+	List<Topic> selectAllByClassId(@Param("classId")int classId);
+
+	//结贴未结贴
+	List<Topic> selectByEnable(@Param("enable")boolean enable);
 }

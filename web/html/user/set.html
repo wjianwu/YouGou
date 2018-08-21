@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../res/css/global.css">
     <script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="../../res/layui/layui.js"></script>
+    <script src="../../js/ShowByClassId.js"></script>
 </head>
 <body>
 
@@ -47,17 +48,6 @@
                     </dd>
                     <hr style="margin: 5px 0;">
                     <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>
-                    <script>
-                        function logOut() {
-                            layer.confirm("确定退出吗？",{btn:["在留一会","拂袖而去"]},function () {
-                                layer.msg("德丽莎世界第一可爱",{icon:1});
-                            },function () {
-                                layer.msg("您已退出",{icon:1})
-                                $.post("/logout");
-                                window.location.href = "/html/index.html";
-                            })
-                        }
-                    </script>
                 </dl>
             </li>
         </ul>

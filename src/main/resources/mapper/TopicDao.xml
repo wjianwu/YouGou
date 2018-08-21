@@ -5,6 +5,8 @@
         <id column="id" property="id" jdbcType="INTEGER"/>
         <result column="classid" property="classid" jdbcType="INTEGER"/>
         <result column="userid" property="userid" jdbcType="INTEGER"/>
+        <result column="class_name" property="className" jdbcType="VARCHAR"/>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
         <result column="title" property="title" jdbcType="VARCHAR"/>
         <result column="rank" property="rank" jdbcType="INTEGER"/>
         <result column="modified_on" property="modifiedOn" jdbcType="TIMESTAMP"/>
@@ -18,23 +20,26 @@
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from topic
     where id = #{id,jdbcType=INTEGER}
-  </delete>
+    </delete>
     <insert id="insert" parameterType="darian.entity.Topic">
-    insert into topic (id, classid, userid, 
+    insert into topic (id, classid, userid, class_name, user_name,
       title, rank, modified_on, 
       hits, reply_count, img_url, 
       enable, create_on, body
       )
     values (#{id,jdbcType=INTEGER}, #{classid,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, 
-      #{title,jdbcType=VARCHAR}, #{rank,jdbcType=INTEGER}, #{modifiedOn,jdbcType=TIMESTAMP}, 
+      #{className,jdbcType=VARCHAR},#{userName,jdbcType=VARCHAR},
+      #{title,jdbcType=VARCHAR}, #{rank,jdbcType=INTEGER}, #{modifiedOn,jdbcType=TIMESTAMP},
       #{hits,jdbcType=INTEGER}, #{replyCount,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}, 
       #{enable,jdbcType=BIT}, #{createOn,jdbcType=TIMESTAMP}, #{body,jdbcType=LONGVARCHAR}
       )
-  </insert>
+    </insert>
     <update id="updateByPrimaryKey" parameterType="darian.entity.Topic">
     update topic
     set classid = #{classid,jdbcType=INTEGER},
       userid = #{userid,jdbcType=INTEGER},
+      class_name = #{className,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
       title = #{title,jdbcType=VARCHAR},
       rank = #{rank,jdbcType=INTEGER},
       modified_on = #{modifiedOn,jdbcType=TIMESTAMP},
@@ -45,26 +50,39 @@
       create_on = #{createOn,jdbcType=TIMESTAMP},
       body = #{body,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
-  </update>
+    </update>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
-    select id, classid, userid, title, rank, modified_on, hits, reply_count, img_url, 
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
     from topic
     where id = #{id,jdbcType=INTEGER}
-  </select>
+    </select>
     <select id="selectAll" resultMap="BaseResultMap">
-    select id, classid, userid, title, rank, modified_on, hits, reply_count, img_url, 
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
-    from topic limit 10
-  </select>
+    from topic order by modified_on desc limit 10
+    </select>
     <select id="selectAllById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select id, classid, userid, title, rank, modified_on, hits, reply_count, img_url,
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
     from topic
     where userid = #{userId,jdbcType=INTEGER}
-  </select>
+    </select>
     <update id="updateTopicImg">
         update topic set img_url = #{filename,jdbcType=VARCHAR} where userid = #{userId}
     </update>
+    <select id="selectAllByClassId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
+    enable, create_on, body
+    from topic
+    where classid = #{classId,jdbcType=INTEGER}
+    </select>
+    <select id="selectByEnable" parameterType="java.lang.Boolean" resultMap="BaseResultMap">
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
+    enable, create_on, body
+    from topic
+    where enable = #{enable,jdbcType=BIT} order by modified_on
+    </select>
+
 
 </mapper>

@@ -84,6 +84,7 @@ public class UserController {
         return map;
     }
 
+    //找回密码
     @RequestMapping("/findpass")
     @ResponseBody
     public Map findPass(HttpServletRequest request){
@@ -102,4 +103,14 @@ public class UserController {
         }
 
     }
+
+	@RequestMapping("/getNameById")
+	@ResponseBody
+    //根据用户ID查找用户名
+	public Map getNameById(HttpServletRequest request){
+    	Map<String,Object> map = new HashMap<String, Object>();
+    	int userId = Integer.parseInt(request.getParameter("userId"));
+    	map.put("user",userService.getUserById(userId));
+    	return map;
+	}
 }

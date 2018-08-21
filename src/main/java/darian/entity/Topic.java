@@ -9,6 +9,10 @@ public class Topic {
 
     private Integer userid;
 
+    private String className;
+
+    private String userName;
+
     private String title;
 
     private Integer rank;
@@ -51,7 +55,24 @@ public class Topic {
         this.userid = userid;
     }
 
-    public String getTitle() {
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+
+		this.className = className;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getTitle() {
         return title;
     }
 

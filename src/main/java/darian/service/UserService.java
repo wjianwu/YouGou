@@ -23,5 +23,6 @@ public interface UserService {
     //修改密码
     boolean updatePwd(int id, String nowpass);
 
+    //邮箱找回密码
     String getUserByEmail(String email);
 }
