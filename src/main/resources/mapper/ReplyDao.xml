@@ -4,8 +4,11 @@
   <resultMap id="BaseResultMap" type="darian.entity.Reply" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="topicid" property="topicid" jdbcType="INTEGER" />
+    <result column="userid1" property="userid1" jdbcType="INTEGER" />
+    <result column="username1" property="username1" jdbcType="VARCHAR" />
+    <result column="userid2" property="userid2" jdbcType="INTEGER" />
+    <result column="username2" property="username2" jdbcType="VARCHAR" />
     <result column="body" property="body" jdbcType="VARCHAR" />
-    <result column="userid" property="userid" jdbcType="INTEGER" />
     <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
@@ -13,26 +16,31 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="darian.entity.Reply" >
-    insert into reply (id, topicid, body, 
-      userid, create_on)
-    values (#{id,jdbcType=INTEGER}, #{topicid,jdbcType=INTEGER}, #{body,jdbcType=VARCHAR}, 
-      #{userid,jdbcType=INTEGER}, #{createOn,jdbcType=TIMESTAMP})
+    insert into reply (id, topicid, userid1, 
+      username1, userid2, username2, 
+      body, create_on)
+    values (#{id,jdbcType=INTEGER}, #{topicid,jdbcType=INTEGER}, #{userid1,jdbcType=INTEGER}, 
+      #{username1,jdbcType=VARCHAR}, #{userid2,jdbcType=INTEGER}, #{username2,jdbcType=VARCHAR}, 
+      #{body,jdbcType=VARCHAR}, #{createOn,jdbcType=TIMESTAMP})
   </insert>
   <update id="updateByPrimaryKey" parameterType="darian.entity.Reply" >
     update reply
     set topicid = #{topicid,jdbcType=INTEGER},
+      userid1 = #{userid1,jdbcType=INTEGER},
+      username1 = #{username1,jdbcType=VARCHAR},
+      userid2 = #{userid2,jdbcType=INTEGER},
+      username2 = #{username2,jdbcType=VARCHAR},
       body = #{body,jdbcType=VARCHAR},
-      userid = #{userid,jdbcType=INTEGER},
       create_on = #{createOn,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select id, topicid, body, userid, create_on
+    select id, topicid, userid1, username1, userid2, username2, body, create_on
     from reply
     where id = #{id,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, topicid, body, userid, create_on
+    select id, topicid, userid1, username1, userid2, username2, body, create_on
     from reply
   </select>
 </mapper>

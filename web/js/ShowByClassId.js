@@ -116,3 +116,4 @@ function getUrlParam(name){
         return unescape(r[2]);
     return null;
 }
+/*内容转义*/

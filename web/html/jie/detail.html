@@ -11,21 +11,24 @@
     <script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="../../res/layui/layui.js"></script>
     <script src="../../js/ShowByClassId.js"></script>
+    <script src="../../res/mods/index.js"></script>
     <script>
         $(function () {
             var topicId = getUrlParam("topic");
             $.ajax({
-                type:"POST",
-                url:"/detail?topicId="+topicId,
-                dataType:"json",
-                success:function (data) {
+                type: "POST",
+                url: "/detail?topicId=" + topicId,
+                dataType: "json",
+                success: function (data) {
                     $("#title").text(data.title);
                     $("#replyCount").text(data.replyCount);
                     $("#hits").text(data.hits);
-                    $("#headUrl2").attr("src",data.imgUrl);
+                    $("#headUrl2").attr("src", data.imgUrl);
                     $("#citeText2").text(data.userName);
-                    $("#createOn").text(new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/,' '));
-                    $("#rank").text("悬赏："+data.rank+"飞吻");
+                    $("#createOn").text(new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/, ' '));
+                    $("#rank").text("悬赏：" + data.rank + "飞吻");
+                    $("#body").html(data.body);
+
                 }
             });
         })
@@ -40,10 +43,10 @@
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
             <li class="layui-nav-item layui-this">
-                <a href="/html/index-2.html"><i class="iconfont icon-jiaoliu"></i>交流</a>
+                <a href="#"><i class="iconfont icon-jiaoliu"></i>交流</a>
             </li>
             <li class="layui-nav-item">
-                <a href="#"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
+                <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
             </li>
             <li class="layui-nav-item">
                 <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
@@ -54,11 +57,10 @@
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
                 <a class="fly-nav-avatar" href="javascript:void(0)">
-                    <cite id="citeText" class="layui-hide-xs">贤心</cite>
+                    <cite id="citeText"></cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
-                    <img id="headUrl"
-                         src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+                    <img id="headUrl">
                 </a>
                 <dl class="layui-nav-child">
                     <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
@@ -67,7 +69,7 @@
                     <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
                     </dd>
                     <hr style="margin: 5px 0;">
-                    <dd><a href="" style="text-align: center;">退出</a></dd>
+                    <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>
                 </dl>
             </li>
         </ul>
@@ -112,11 +114,11 @@
             <div class="fly-panel detail-box">
                 <h1 id="title"></h1>
                 <div class="fly-detail-info">
-                     <span class="layui-badge">审核中</span>
+                    <!-- <span class="layui-badge">审核中</span> -->
                     <span class="layui-badge layui-bg-green fly-detail-column">动态</span>
 
                     <span class="layui-badge" style="background-color: #999;">未结</span>
-                    <span class="layui-badge" style="background-color: #5FB878;">已结</span>
+                     <span class="layui-badge" style="background-color: #5FB878;">已结</span>
 
                     <span class="layui-badge layui-bg-black">置顶</span>
                     <span class="layui-badge layui-bg-red">精帖</span>
@@ -125,16 +127,16 @@
                         <span class="layui-btn layui-btn-xs jie-admin" type="del">删除</span>
 
                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="stick" rank="1">置顶</span>
-                        <span class="layui-btn layui-btn-xs jie-admin" type="set" field="stick" rank="0" style="background-color:#ccc;">取消置顶</span>
+                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="stick" rank="0" style="background-color:#ccc;">取消置顶</span>
 
                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="1">加精</span>
                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="0" style="background-color:#ccc;">取消加精</span>
                     </div>
                     <span class="fly-list-nums">
                         <i class="iconfont" title="回答">&#xe60c;</i>
-                        <a id="replyCount" href="#comment">66</a>
+                        <a id="replyCount" href="#comment"></a>
                         <i class="iconfont" title="人气">&#xe60b;</i>
-                        <span id="hits">99999</span>
+                        <span id="hits"></span>
                     </span>
                 </div>
                 <div class="detail-about">
@@ -153,32 +155,7 @@
                         <span id="rank" style="padding-right: 10px; color: #FF7200"></span>
                     </div>
                 </div>
-                <div class="detail-body photos">
-                    <p>
-                        该模版由 layui官方社区（<a href="http://fly.layui.com/" target="_blank">fly.layui.com</a>）倾情提供，只为表明我们对
-                        layui 执着的信念、以及对未来持续加强的承诺。该模版基于 layui 搭建而成，可作为极简通用型社区的页面支撑。
-                    </p>
-                    <p>更新日志：</p>
-                    <pre>
-# v3.0 2017-11-30
-* 采用 layui 2.2.3 作为 UI 支撑
-* 全面同步最新的 Fly 社区风格，各种细节得到大幅优化
-* 更友好的响应式适配能力
-</pre>
-
-                    下载
-                    <hr>
-                    <p>
-                        官网：<a href="http://www.layui.com/template/fly/" target="_blank">http://www.layui.com/template/fly/</a><br>
-                        码云：<a href="https://gitee.com/sentsin/fly/"
-                              target="_blank">https://gitee.com/sentsin/fly/</a><br>
-                        GitHub：<a href="https://github.com/layui/fly" target="_blank">https://github.com/layui/fly</a>
-                    </p>
-                    封面
-                    <hr>
-                    <p>
-                        <img src="../../res/images/fly.jpg" alt="Fly社区">
-                    </p>
+                <div id="body" class="detail-body photos">
                 </div>
             </div>
 
@@ -364,17 +341,16 @@
 </div>
 
 <div class="fly-footer">
+    <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/"
+                                                                                target="_blank">layui.com 出品</a></p>
     <p>
-        <a href="#" target="_blank">YouGou社区</a> 2018 &copy;
-        <a href="#" target="_blank">文建武 出品(仅个人使用)</a>
-    </p>
-    <p>
-        <a href="#" target="_blank">群拍计划</a>
-        <a href="#" target="_blank">欢迎加入</a>
-        <a href="#" target="_blank">微信公众号</a>
+        <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
+        <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
+        <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
     </p>
 </div>
 
+<script src="../../res/layui/layui.js"></script>
 <script>
     layui.cache.page = 'jie';
     layui.cache.user = {
@@ -399,20 +375,19 @@
           othis.html(fly.content(html));
         });
         */
-        $(function () {
-            /*显示头像用户名*/
-            $.ajax({
-                type: "POST",
-                url: "/show",
-                dataType: "json",
-                success: function (data) {
-                    $("#citeText").text(data.username);
-                    if (data.headUrl != null) {
-                        $("#headUrl").attr("src", data.headUrl);
-                    }
+    });
+    $(function () {
+        $.ajax({
+            type: "POST",
+            url: "/show",
+            dataType: "json",
+            success: function (data) {
+                $("#citeText").text(data.nickname + "(" + data.username + ")");
+                if (data.headUrl != null) {
+                    $("#headUrl").attr("src", data.headUrl);
                 }
+            }
 
-            });
         })
     });
 </script>

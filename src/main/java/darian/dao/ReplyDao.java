@@ -1,7 +1,6 @@
 package darian.dao;
 
 import darian.entity.Reply;
-
 import java.util.List;
 
 public interface ReplyDao {
