@@ -25,8 +25,12 @@ public class TopicServiceImpl implements TopicService {
 	}
 
 	@Override
-	public List getAll() {
-		return topicDao.selectAll();
+	public List getAll(int ec) {
+		if(ec == 0){
+			return topicDao.selectAll();
+		}else {
+			return topicDao.selectAllByEc();
+		}
 	}
 
 	@Override
@@ -37,6 +41,11 @@ public class TopicServiceImpl implements TopicService {
 	@Override
 	public List getByEnable(int enable) {
 		return topicDao.selectByEnable(enable == 1);
+	}
+
+	@Override
+	public Topic getDetail(int topicId) {
+		return topicDao.selectByPrimaryKey(topicId);
 	}
 
 

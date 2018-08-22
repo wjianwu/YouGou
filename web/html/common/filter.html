@@ -1,14 +1,15 @@
-<div class="fly-panel-title fly-filter">
-  <a href="" class="layui-this">综合</a>
-  <span class="fly-mid"></span>
-  <a href="">未结</a>
-  <span class="fly-mid"></span>
-  <a href="">已结</a>
-  <span class="fly-mid"></span>
-  <a href="">精华</a>
-  <span class="fly-filter-right layui-hide-xs">
-    <a href="" class="layui-this">按最新</a>
+<script src="../../js/ShowByClassId.js"></script>
+<div id="div1" class="fly-panel-title fly-filter">
+    <a id="zh" href="javascript:void(0)" onclick="showAllByEc(0)" class="layui-this">综合</a>
     <span class="fly-mid"></span>
-    <a href="">按热议</a>
-  </span>
+    <a id="wj" href="javascript:void(0)" onclick="showByEnable(0)">未结</a>
+    <span class="fly-mid"></span>
+    <a id="yj" href="javascript:void(0)" onclick="showByEnable(1)">已结</a>
+    <span class="fly-mid"></span>
+    <a href="javascript:void(0)">精华</a>
+    <span id="span1" class="fly-filter-right layui-hide-xs">
+        <a id="new" href="javascript:void(0)" class="layui-this" onclick="showAllByEc(0)">按最新</a>
+        <span class="fly-mid"></span>
+        <a id="rep" href="javascript:void(0)" onclick="showAllByEc(1)">按热议</a>
+    </span>
 </div>

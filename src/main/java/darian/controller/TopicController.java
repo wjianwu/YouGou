@@ -73,8 +73,9 @@ public class TopicController {
 	//显示所有帖子（前十条，其余会按照分类分页显示）
 	@RequestMapping("/showAll")
 	@ResponseBody
-	public List showAll(){
-		return topicService.getAll();
+	public List showAll(HttpServletRequest request){
+		int ec = Integer.parseInt(request.getParameter("ec"));
+		return topicService.getAll(ec);
 	}
 
 	//按分类显示（分享类）
@@ -91,5 +92,13 @@ public class TopicController {
 	public List showByEnable(HttpServletRequest request){
 		int enable = Integer.parseInt(request.getParameter("enable"));
 		return topicService.getByEnable(enable);
+	}
+
+	//显示细节
+	@RequestMapping("/detail")
+	@ResponseBody
+	public Topic showDetail(HttpServletRequest request){
+		int topicId = Integer.parseInt(request.getParameter("topicId"));
+		return topicService.getDetail(topicId);
 	}
 }

@@ -27,4 +27,6 @@ public interface TopicDao {
 
 	//结贴未结贴
 	List<Topic> selectByEnable(@Param("enable")boolean enable);
+
+	List<Topic> selectAllByEc();
 }

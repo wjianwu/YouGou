@@ -11,7 +11,7 @@ function homeShow(classId) {
                 if(data[i].replyCount == null){data[i].replyCount = 0;}
                 string = string +
                     "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
-                    "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"detail.html\">"+data[i].title+"</a></h2>\n" +
+                    "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"detail.html?topic="+data[i].id+"\">"+data[i].title+"</a></h2>\n" +
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite>"+data[i].userName+"</cite></a>\n" +
                     "<span>"+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
@@ -60,7 +60,7 @@ function showByEnable(enable) {
 
             string = string +
                 "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
-                "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html\">"+data[i].title+"</a></h2>\n" +
+                "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html?topic="+data[i].id+"\">"+data[i].title+"</a></h2>\n" +
                 "<div class=\"fly-list-info\">\n" +
                 "<a href=\"user/home.html\" link><cite id=\"cite"+i+"\">"+data[i].userName+"</cite></a>\n" +
                 "<span>发表于："+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
@@ -77,10 +77,10 @@ function showByEnable(enable) {
 })
 }
 /*显示所有*/
-function showAll() {
+function showAllByEc(ec) {
     $.ajax({
         type:"POST",
-        url:"/showAll",
+        url:"/showAll?ec="+ec,
         dataType:"json",
         success:function (data) {
             var string = "";
@@ -92,7 +92,7 @@ function showAll() {
 
                 string = string +
                     "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
-                    "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html\">"+data[i].title+"</a></h2>\n" +
+                    "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html?topic="+data[i].id+"\">"+data[i].title+"</a></h2>\n" +
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite id=\"cite"+i+"\">"+data[i].userName+"</cite></a>\n" +
                     "<span>发表于："+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
@@ -108,7 +108,11 @@ function showAll() {
         }
     })
 }
-
-function showByEC(enable) {
-
+/*获取地址栏参数*/
+function getUrlParam(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)
+        return unescape(r[2]);
+    return null;
 }

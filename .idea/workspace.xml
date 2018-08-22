@@ -7,45 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/darian/service/SmallBlockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/SmallBlockServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/ShowByClassId.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/serviceImpl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/serviceImpl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/common/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/common/filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/common/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/common/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/jie/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/0a6c793cb7654ada821a2c0e0d9110a6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/1bdd66b108c7461e8f7b9f7e16d32845.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/58a970f346b149bd94130a68a1df29ef.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/67d5415dcde4452cac3b0f8f4cea69ee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/98b7efa660df4fbe89a3973cacd9d004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/b77a1cd1169844358689ed173785217f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/b9096b0eafcb49ccb4a6957277c207c0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload/eb2e80ae116e47e5b35ea5ae89b1c287.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/jie/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/ShowByClassId.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/ShowByClassId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/res/images/weixin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/images/weixin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/res/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/res/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/layui/layui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,10 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicStateTypeDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserGroupDao.xml" />
-        <option value="$PROJECT_DIR$/web/views/index.html" />
-        <option value="$PROJECT_DIR$/web/json/signin.js" />
         <option value="$PROJECT_DIR$/web/views/case/case.html" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -119,7 +93,6 @@
         <option value="$PROJECT_DIR$/web/views/user/set.html" />
         <option value="$PROJECT_DIR$/web/html/user/reg.html" />
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/User.java" />
-        <option value="$PROJECT_DIR$/web/res/layui/layui.js" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/web/res/mods/user.js" />
         <option value="$PROJECT_DIR$/web/res/mods/index.js" />
@@ -134,10 +107,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/web/html/case/case.html" />
         <option value="$PROJECT_DIR$/web/html/common/link.html" />
-        <option value="$PROJECT_DIR$/web/html/jie/detail.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" />
-        <option value="$PROJECT_DIR$/web/html/jie/add.html" />
         <option value="$PROJECT_DIR$/web/html/user/index.html" />
         <option value="$PROJECT_DIR$/web/html/user/set.html" />
         <option value="$PROJECT_DIR$/web/html/user/home.html" />
@@ -151,14 +122,21 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/SmallBlockServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/service/SmallBlockService.java" />
+        <option value="$PROJECT_DIR$/web/html/jie/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" />
+        <option value="$PROJECT_DIR$/web/js/ShowByClassId.js" />
         <option value="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/web/html/jie/detail.html" />
+        <option value="$PROJECT_DIR$/web/html/jie/add.html" />
+        <option value="$PROJECT_DIR$/web/res/layui/layui.js" />
+        <option value="$PROJECT_DIR$/web/res/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/web/html/common/footer.html" />
         <option value="$PROJECT_DIR$/web/html/index-2.html" />
-        <option value="$PROJECT_DIR$/web/html/jie/index.html" />
-        <option value="$PROJECT_DIR$/web/js/ShowByClassId.js" />
+        <option value="$PROJECT_DIR$/web/html/common/filter.html" />
+        <option value="$PROJECT_DIR$/web/json/signin.js" />
       </list>
     </option>
   </component>
@@ -210,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -259,7 +236,42 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="darian" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="darian" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="darian" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
@@ -278,11 +290,31 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +583,8 @@
       <workItem from="1534676775481" duration="11408000" />
       <workItem from="1534724814277" duration="34836000" />
       <workItem from="1534769491270" duration="6095000" />
-      <workItem from="1534812123657" duration="36301000" />
+      <workItem from="1534812123657" duration="36439000" />
+      <workItem from="1534903002322" duration="17149000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -630,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534775568098</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2018/8/21 first commit">
+      <created>1534861255598</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534861255598</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -666,7 +706,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220944000" />
+    <option name="totallyTimeSpent" value="238231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -690,10 +730,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.29968944" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.29192546" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.16837482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.18155198" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
@@ -721,7 +761,8 @@
     <MESSAGE value="2018/8/20 first commit" />
     <MESSAGE value="2018/8/20 second commit" />
     <MESSAGE value="2018/8/20 third commit(readme)" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/8/20 third commit(readme)" />
+    <MESSAGE value="2018/8/21 first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/8/21 first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -733,106 +774,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/html/user/forget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="134" column="50" selection-start-line="134" selection-start-column="50" selection-end-line="134" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/user/activate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="126" column="30" lean-forward="true" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/extra/Email.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/0d8389f4c2bf47709111ac280a050c20.jpeg" />
-    <entry file="file://$PROJECT_DIR$/web/upload/59f894b4916442ab86bd7a201bd211c5.jpeg" />
-    <entry file="file://$PROJECT_DIR$/web/upload/1cd3b8432e884a9c9e434c79e45fb1e8.jpeg" />
-    <entry file="file://$PROJECT_DIR$/web/upload/d30fef08fa594ca8aac50c09a362a0e9.jpeg" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="222" column="8" selection-start-line="222" selection-start-column="8" selection-end-line="222" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JDK/Java/jdk1.8.0_151/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2871">
-          <caret line="338" column="59" selection-start-line="338" selection-start-column="59" selection-end-line="338" selection-end-column="59" />
-          <folding>
-            <element signature="e#19327#19328#0" expanded="true" />
-            <element signature="e#19410#19411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mbg.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMbg.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-          <folding>
-            <element signature="e#1076#1087#0" expanded="true" />
-            <element signature="e#1130#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/case/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2838" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/link.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="186" column="49" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -847,18 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/1bdd66b108c7461e8f7b9f7e16d32845.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/58a970f346b149bd94130a68a1df29ef.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/67d5415dcde4452cac3b0f8f4cea69ee.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/upload/0a6c793cb7654ada821a2c0e0d9110a6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload/1bdd66b108c7461e8f7b9f7e16d32845.png" />
+    <entry file="file://$PROJECT_DIR$/web/upload/58a970f346b149bd94130a68a1df29ef.png" />
+    <entry file="file://$PROJECT_DIR$/web/upload/67d5415dcde4452cac3b0f8f4cea69ee.png" />
+    <entry file="file://$PROJECT_DIR$/web/upload/0a6c793cb7654ada821a2c0e0d9110a6.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -959,9 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="635">
           <caret line="112" column="56" lean-forward="true" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
-          <folding>
-            <element signature="e#3289#3305#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,19 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="method#setClassName#0;class#Topic#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/jie/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1707">
-          <caret line="77" column="66" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="66" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,9 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,95 +920,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="122" column="14" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="1" column="43961" selection-start-line="1" selection-start-column="43961" selection-end-line="1" selection-end-column="43961" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="83" column="62" lean-forward="true" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="91" column="66" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="66" />
-          <folding>
-            <element signature="method#issue#0;class#TopicController#0" />
-            <element signature="method#showTopic#0;class#TopicController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/index-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5682">
-          <caret line="489" column="43" lean-forward="true" selection-start-line="489" selection-start-column="43" selection-end-line="489" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#dd#1;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#dd#2;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#dd#3;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4248#11117#0" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#24423#24760#0" />
-            <element signature="e#22887#25175#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/jie/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="96" column="55" lean-forward="true" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+        <state relative-caret-position="353">
+          <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#dd#1;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#dd#2;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1099,26 +932,221 @@
             <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#13311#13428#0" />
-            <element signature="e#13567#13719#0" />
-            <element signature="e#13446#13783#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/ShowByClassId.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="61" column="49" lean-forward="true" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="198">
+          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#homeShow#0" />
             <element signature="n#!!block;n#logOut#0" />
-            <element signature="n#!!block;n#f#0" />
-            <element signature="e#3697#5985#0" />
+            <element signature="n#!!block;n#showByEnable#0" />
+            <element signature="n#!!block;n#showAllByEc#0" />
+            <element signature="n#!!block;n#getUrlParam#0" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="97" column="30" lean-forward="true" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+          <folding>
+            <element signature="method#issue#0;class#TopicController#0" />
+            <element signature="method#showTopic#0;class#TopicController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2899">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="1377" column="1" selection-start-line="1377" selection-start-column="1" selection-end-line="1377" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2486">
+          <caret line="122" column="14" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/common/link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/common/user-nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/common/header.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/common/filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/index-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="278" column="18" lean-forward="true" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#1;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#dd#2;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#dd#3;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7038#13907#0" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/case/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/json/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1190" lean-forward="true" selection-start-column="1190" selection-end-column="1190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/jie/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="152" column="91" selection-start-line="152" selection-start-column="91" selection-end-line="152" selection-end-column="91" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/fly.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/logo-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/weixin.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/case.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/avatar/0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/images/avatar/11.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

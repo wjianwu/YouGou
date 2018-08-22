@@ -60,7 +60,7 @@
     <select id="selectAll" resultMap="BaseResultMap">
     select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
-    from topic order by modified_on desc limit 10
+    from topic order by modified_on desc
     </select>
     <select id="selectAllById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
@@ -81,8 +81,12 @@
     select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
     from topic
-    where enable = #{enable,jdbcType=BIT} order by modified_on
+    where enable = #{enable,jdbcType=BIT} order by modified_on desc
     </select>
-
+    <select id="selectAllByEc" resultMap="BaseResultMap">
+    select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
+    enable, create_on, body
+    from topic order by reply_count desc
+    </select>
 
 </mapper>

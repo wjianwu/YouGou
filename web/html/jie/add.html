@@ -33,7 +33,7 @@
         <ul class="layui-nav fly-nav-user">
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
-                <a class="fly-nav-avatar" href="javascript:;">
+                <a class="fly-nav-avatar" href="javascript:void(0)">
                     <cite id="citeText" class="layui-hide-xs">贤心</cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
                     <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
@@ -162,21 +162,7 @@
                             </div>
                         </form>
                         <script>
-                            $("#issueBtn").click(function () {
-                                $.ajax({
-                                    type: "POST",
-                                    url: "/issue",
-                                    data: $("#issueForm").serialize(),
-                                    dataType: "json",
-                                    success: function (data) {
-                                        if (data.status == "ok") {
-                                            layer.msg("发布成功", {icon: 6});
-                                        } else {
-                                            layer.msg("发布失败，原因未知", {icon: 5});
-                                        }
-                                    }
-                                })
-                            });
+
                         </script>
                     </div>
                 </div>
@@ -225,7 +211,22 @@
             }
 
         })
-    })
+    });
+    $("#issueBtn").click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/issue",
+            data: $("#issueForm").serialize(),
+            dataType: "json",
+            success: function (data) {
+                if (data.status == "ok") {
+                    layer.msg("发布成功", {icon: 6});
+                } else {
+                    layer.msg("发布失败，原因未知", {icon: 5});
+                }
+            }
+        })
+    });
 </script>
 
 </body>
