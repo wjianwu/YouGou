@@ -3,9 +3,14 @@
 <mapper namespace="darian.dao.ReplyDao" >
   <resultMap id="BaseResultMap" type="darian.entity.Reply" >
     <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="topicid" property="topicid" jdbcType="INTEGER" />
-    <result column="body" property="body" jdbcType="VARCHAR" />
-    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="comment_id" property="commentId" jdbcType="INTEGER" />
+    <result column="user_reply" property="userReply" jdbcType="INTEGER" />
+    <result column="user_reply_name" property="userReplyName" jdbcType="VARCHAR" />
+    <result column="user_reply_img" property="userReplyImg" jdbcType="VARCHAR" />
+    <result column="user_to" property="userTo" jdbcType="INTEGER" />
+    <result column="user_to_name" property="userToName" jdbcType="VARCHAR" />
+    <result column="user_to_img" property="userToImg" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
     <result column="create_on" property="createOn" jdbcType="TIMESTAMP" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
@@ -13,26 +18,37 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="darian.entity.Reply" >
-    insert into reply (id, topicid, body, 
-      userid, create_on)
-    values (#{id,jdbcType=INTEGER}, #{topicid,jdbcType=INTEGER}, #{body,jdbcType=VARCHAR}, 
-      #{userid,jdbcType=INTEGER}, #{createOn,jdbcType=TIMESTAMP})
+    insert into reply (id, comment_id, user_reply, 
+      user_reply_name, user_reply_img, user_to, 
+      user_to_name, user_to_img, content, 
+      create_on)
+    values (#{id,jdbcType=INTEGER}, #{commentId,jdbcType=INTEGER}, #{userReply,jdbcType=INTEGER}, 
+      #{userReplyName,jdbcType=VARCHAR}, #{userReplyImg,jdbcType=VARCHAR}, #{userTo,jdbcType=INTEGER}, 
+      #{userToName,jdbcType=VARCHAR}, #{userToImg,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{createOn,jdbcType=TIMESTAMP})
   </insert>
   <update id="updateByPrimaryKey" parameterType="darian.entity.Reply" >
     update reply
-    set topicid = #{topicid,jdbcType=INTEGER},
-      body = #{body,jdbcType=VARCHAR},
-      userid = #{userid,jdbcType=INTEGER},
+    set comment_id = #{commentId,jdbcType=INTEGER},
+      user_reply = #{userReply,jdbcType=INTEGER},
+      user_reply_name = #{userReplyName,jdbcType=VARCHAR},
+      user_reply_img = #{userReplyImg,jdbcType=VARCHAR},
+      user_to = #{userTo,jdbcType=INTEGER},
+      user_to_name = #{userToName,jdbcType=VARCHAR},
+      user_to_img = #{userToImg,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
       create_on = #{createOn,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select id, topicid, body, userid, create_on
+    select id, comment_id, user_reply, user_reply_name, user_reply_img, user_to, user_to_name, 
+    user_to_img, content, create_on
     from reply
     where id = #{id,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
-    select id, topicid, body, userid, create_on
+    select id, comment_id, user_reply, user_reply_name, user_reply_img, user_to, user_to_name, 
+    user_to_img, content, create_on
     from reply
   </select>
 </mapper>
