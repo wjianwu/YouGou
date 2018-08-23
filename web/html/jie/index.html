@@ -10,6 +10,90 @@
     <link rel="stylesheet" href="../../res/css/global.css">
     <script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="../../res/layui/layui.js"></script>
+    <script>
+
+        layui.cache.page = 'jie';
+        layui.cache.user = {
+            username: '游客'
+            , uid: -1
+            , avatar: '../../res/images/avatar/00.jpg'
+            , experience: 83
+            , sex: '男'
+        };
+        layui.config({
+            version: "3.0.0"
+            , base: '../../res/mods/'
+        }).extend({
+            fly: 'index'
+        }).use('fly');
+
+        $(function () {
+            /*点击样式更换*/
+            $("#ulc li").click(function () {
+                $(this).siblings('li').removeClass("layui-this");
+                $(this).addClass("layui-this");
+            });
+            /*点击样式更换*/
+            $("#div1").children().click(function () {
+                $(this).siblings("a").removeClass("layui-this");
+                $(this).addClass("layui-this");
+            });
+            /*头像、用户名的显示*/
+            $.ajax({
+                type:"POST",
+                url:"/show",
+                dataType:"json",
+                success:function (data) {
+                    $("#citeText").text(data.nickname+"("+data.username+")");
+                    if(data.headUrl != null){
+                        $("#headUrl").attr("src",data.headUrl);
+                    }
+                }
+
+            });
+            /*本周热议*/
+            $.ajax({
+                type:"POST",
+                url:"/showAll?ec="+1,
+                dataType:"json",
+                success:function (data) {
+                    var st = '<dt class="fly-panel-title">本周热议</dt>';
+                    for(var i=0;i<data.length;i++){
+                        st = st +
+                            '<dd>\n' +
+                            '    <a href="detail.html?topic='+data[i].id+'">' + data[i].title + '</a>\n' +
+                            '    <span><i class="iconfont icon-pinglun1"></i>'+data[i].replyCount+'</span>\n' +
+                            '</dd>';
+                    }
+                    $("#reyi").html(st);
+                }
+            });
+            /*未完。已结分类*/
+            $.ajax({
+                type:"POST",
+                url:"/showShare?classId=0",
+                dataType:"json",
+                success:function (data) {
+                    var string = "";
+                    for(var i = 0;i<data.length;i++){
+                        if(data[i].enable == 1){data[i].enable = "未完";}else {data[i].enable = "已结";}
+                        if(data[i].replyCount == null){data[i].replyCount = 0;}
+                        string = string +
+                            "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
+                            "<h2><a class=\"layui-badge\">提问</a><a href=\"detail.html\">"+data[i].title+"</a></h2>\n" +
+                            "<div class=\"fly-list-info\">\n" +
+                            "<a href=\"user/home.html\" link><cite>"+data[i].userid+"(用户ID)</cite></a>\n" +
+                            "<span>"+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
+                            "<span class=\"fly-list-kiss layui-hide-xs\" title=\"fly点\"><i class=\"iconfont icon-kiss\"></i>"+data[i].rank+"</span>\n" +
+                            "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i>"+data[i].replyCount+"</span>\n" +
+                            "</div></li>";
+                    }
+                    $("#ulShow").html(string);
+                }
+            });
+        })
+
+    </script>
 </head>
 <body>
 
@@ -137,33 +221,6 @@
                 </ul>
 
                 <!--ajax显示-->
-                <script>
-                    $(function () {
-                        $.ajax({
-                            type:"POST",
-                            url:"/showShare?classId=0",
-                            dataType:"json",
-                            success:function (data) {
-                                var string = "";
-                                for(var i = 0;i<data.length;i++){
-                                    if(data[i].enable == 1){data[i].enable = "未完";}else {data[i].enable = "已结";}
-                                    if(data[i].replyCount == null){data[i].replyCount = 0;}
-                                    string = string +
-                                        "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
-                                        "<h2><a class=\"layui-badge\">提问</a><a href=\"detail.html\">"+data[i].title+"</a></h2>\n" +
-                                        "<div class=\"fly-list-info\">\n" +
-                                        "<a href=\"user/home.html\" link><cite>"+data[i].userid+"(用户ID)</cite></a>\n" +
-                                        "<span>"+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+"</span>\n" +
-                                        "<span class=\"fly-list-kiss layui-hide-xs\" title=\"fly点\"><i class=\"iconfont icon-kiss\"></i>"+data[i].rank+"</span>\n" +
-                                        "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i>"+data[i].replyCount+"</span>\n" +
-                                        "</div></li>";
-                                }
-                                $("#ulShow").html(string);
-                            }
-                        });
-                    })
-
-                </script>
 
                 <!--分页显示-->
                 <div style="text-align: center">
@@ -183,55 +240,7 @@
 
         <!--本周热议内容-->
         <div class="layui-col-md4">
-            <dl class="fly-panel fly-list-one">
-                <dt class="fly-panel-title">本周热议</dt>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-
-                <!-- 无数据时 -->
-                <!--
-                <div class="fly-none">没有相关数据</div>
-                -->
-            </dl>
-
+            <dl id="reyi" class="fly-panel fly-list-one"></dl>
             <div class="fly-panel">
                 <div class="fly-panel-title">
                     这里可作为广告区域
@@ -275,48 +284,6 @@
         <a href="#" target="_blank">微信公众号</a>
     </p>
 </div>
-
-<script>
-    layui.cache.page = 'jie';
-    layui.cache.user = {
-        username: '游客'
-        , uid: -1
-        , avatar: '../../res/images/avatar/00.jpg'
-        , experience: 83
-        , sex: '男'
-    };
-    layui.config({
-        version: "3.0.0"
-        , base: '../../res/mods/'
-    }).extend({
-        fly: 'index'
-    }).use('fly');
-
-    /*点击样式更换*/
-    /*头像、用户名的显示*/
-    $(function () {
-        $("#ulc li").click(function () {
-            $(this).siblings('li').removeClass("layui-this");
-            $(this).addClass("layui-this");
-        });
-        $("#div1").children().click(function () {
-            $(this).siblings("a").removeClass("layui-this");
-            $(this).addClass("layui-this");
-        });
-        $.ajax({
-            type:"POST",
-            url:"/show",
-            dataType:"json",
-            success:function (data) {
-                $("#citeText").text(data.nickname+"("+data.username+")");
-                if(data.headUrl != null){
-                    $("#headUrl").attr("src",data.headUrl);
-                }
-            }
-
-        })
-    })
-</script>
 
 </body>
 </html>

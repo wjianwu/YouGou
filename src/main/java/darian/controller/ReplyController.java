@@ -1,8 +1,11 @@
 package darian.controller;
 
 import darian.entity.Comment;
+import darian.entity.Define;
+import darian.entity.Topic;
 import darian.entity.User;
 import darian.service.ReplyService;
+import darian.service.TopicService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -18,6 +21,8 @@ public class ReplyController {
 
 	@Resource
 	private ReplyService replyService;
+	@Resource
+	private TopicService topicService;
 
 	/*发表评论*/
 	@RequestMapping("/comment")
@@ -28,6 +33,13 @@ public class ReplyController {
 		HttpSession session = request.getSession();
 		int topicId = Integer.parseInt(request.getParameter("topicId"));
 		User user = (User)session.getAttribute("user");
+
+		Topic topic = topicService.getById(topicId);
+		if(topic.getUserid().equals(user.getId()) ){
+			map.put("eq",1);
+		}else {
+			map.put("eq",0);
+		}
 
 		String com = request.getParameter("content");
 
@@ -40,6 +52,9 @@ public class ReplyController {
 		comment.setZanCount(0);//点赞数
 		comment.setStatus(0);//是否被采纳（采纳程度默认为0-10之间）
 		comment.setCreateOn(new Timestamp(new Date().getTime()));//评论时间
+
+		//更新回复数量
+		topicService.replyCount(topicId);
 
 		if(replyService.subComment(comment)){
 			map.put("status","ok");
@@ -56,4 +71,12 @@ public class ReplyController {
 		int topicId = Integer.parseInt(request.getParameter("topicId"));
 		return replyService.showComment(topicId);
 	}
+
+	/*回帖周榜*/
+	@RequestMapping("/huiTie")
+	@ResponseBody
+	public List<Define> huiTie(){
+		return replyService.huiTie();
+	}
+
 }

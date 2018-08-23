@@ -50,4 +50,7 @@
     from comment
     where topic_id = #{topicId,jdbcType=INTEGER}
     </select>
+    <select id="huiTie" resultType="darian.entity.Define">
+    select user_id,user_name,user_img,count(user_id)as count from `comment` group by user_id ORDER BY count desc limit 9
+    </select>
 </mapper>

@@ -86,7 +86,13 @@
     <select id="selectAllByEc" resultMap="BaseResultMap">
     select id, classid, userid, class_name, user_name, title, rank, modified_on, hits, reply_count, img_url,
     enable, create_on, body
-    from topic order by reply_count desc
+    from topic order by reply_count desc limit 10
     </select>
+    <select id="selectByTopicId" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+        select reply_count from topic where id = #{topicId,jdbcType=INTEGER}
+    </select>
+    <update id="replyCount">
+        update topic set reply_count = #{count,jdbcType=VARCHAR} where id = #{topicId,jdbcType=INTEGER}
+    </update>
 
 </mapper>

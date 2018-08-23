@@ -29,4 +29,8 @@ public interface TopicDao {
 	List<Topic> selectByEnable(@Param("enable")boolean enable);
 
 	List<Topic> selectAllByEc();
+
+	//topic回复数量
+	int selectByTopicId(@Param("topicId") int topicId);
+	int replyCount(@Param("topicId") int topicId,@Param("count") int count);
 }

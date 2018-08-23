@@ -147,11 +147,16 @@ function subComment() {
         data: $("#replyForm").serialize(),
         dataType: "json",
         success: function (data) {
-            if (data.status == "ok") {
+
+            if(data.status == "ok"&&data.eq == 1){
                 $("#L_content").val("");
                 layer.msg("评论成功", {icon: 6});
                 showComment();
-            } else {
+            }else if(data.status == "ok"&&data.eq == 0){
+                $("#L_content").val("");
+                layer.msg("评论成功", {icon: 6});
+                showComment_2();
+            }else {
                 layer.msg("评论失败", {icon: 5});
             }
         }
@@ -159,17 +164,16 @@ function subComment() {
 
 }
 
-/*显示评论*/
+/*显示评论-副本*/
 function showComment() {
     var topicId = getUrlParam("topic");
-    alert(topicId);
     $.ajax({
         type:"POST",
         url:"/showComment?topicId="+topicId,
         dataType:"json",
         success:function (data) {
             var st = '';
-            if(data == null){
+            if(data.length == 0){
                 $("#jieda").html("<li class=\"fly-none\">消灭零回复</li>");
             }else {
                 for(var i=0;i<data.length;i++){
@@ -182,6 +186,7 @@ function showComment() {
                         '                                <a href="" class="fly-link">\n' +
                         '                                    <cite>'+data[i].userName+'</cite>\n' +
                         '                                </a>\n' +
+                        '                                <span id="span1"></span>' +
                         '                            </div>\n' +
                         '                            <div class="detail-hits">\n' +
                         '                                <span>'+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/, ' ')+'</span>\n' +
@@ -200,10 +205,55 @@ function showComment() {
                         '                                回复\n' +
                         '                            </span>\n' +
                         '                            <div class="jieda-admin">\n' +
-                        '                                <span type="edit">编辑</span>\n' +
-                        '                                <span type="del">删除</span>\n' +
                         '                                <span class="jieda-accept" type="accept">采纳</span>\n' +
                         '                            </div>\n' +
+                        '                        </div>\n' +
+                        '                    </li>';
+                }
+                $("#jieda").html(st);
+            }
+        }
+    })
+}
+function showComment_2() {
+    var topicId = getUrlParam("topic");
+    $.ajax({
+        type:"POST",
+        url:"/showComment?topicId="+topicId,
+        dataType:"json",
+        success:function (data) {
+            var st = '';
+            if(data.length == 0){
+                $("#jieda").html("<li class=\"fly-none\">消灭零回复</li>");
+            }else {
+                for(var i=0;i<data.length;i++){
+                    st = st + '<li data-id="111">\n' +
+                        '                        <div class="detail-about detail-about-reply">\n' +
+                        '                            <a class="fly-avatar" href="user/home.html">\n' +
+                        '                                <img src="'+data[i].userImg+'">\n' +
+                        '                            </a>\n' +
+                        '                            <div class="fly-detail-user">\n' +
+                        '                                <a href="" class="fly-link">\n' +
+                        '                                    <cite>'+data[i].userName+'</cite>\n' +
+                        '                                </a>\n' +
+                        '                                <span id="span1"></span>' +
+                        '                            </div>\n' +
+                        '                            <div class="detail-hits">\n' +
+                        '                                <span>'+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/, ' ')+'</span>\n' +
+                        '                            </div>\n' +
+                        '                        </div>\n' +
+                        '                        <div class="detail-body jieda-body photos">\n' +
+                        '                            <p>'+data[i].comment+'</p>\n' +
+                        '                        </div>\n' +
+                        '                        <div class="jieda-reply">\n' +
+                        '                            <span class="jieda-zan" type="zan">\n' +
+                        '                                <i class="iconfont icon-zan"></i>\n' +
+                        '                                <em>'+data[i].zanCount+'</em>\n' +
+                        '                            </span>\n' +
+                        '                            <span type="reply">\n' +
+                        '                                <i class="iconfont icon-svgmoban53"></i>\n' +
+                        '                                回复\n' +
+                        '                            </span>\n' +
                         '                        </div>\n' +
                         '                    </li>';
                 }

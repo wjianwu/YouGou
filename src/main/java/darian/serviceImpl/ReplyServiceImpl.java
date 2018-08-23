@@ -2,6 +2,7 @@ package darian.serviceImpl;
 
 import darian.dao.CommentDao;
 import darian.entity.Comment;
+import darian.entity.Define;
 import darian.service.ReplyService;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,11 @@ public class ReplyServiceImpl implements ReplyService {
 
 	@Override
 	public List<Comment> showComment(int topicId) {
-		return commentDao.selectAll();
+		return commentDao.showComment(topicId);
+	}
+
+	@Override
+	public List<Define> huiTie() {
+		return commentDao.huiTie();
 	}
 }

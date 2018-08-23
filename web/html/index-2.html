@@ -13,14 +13,17 @@
     <script src="../js/general.js"></script>
     <script>
         $(function (){
+            /*点击样式更换*/
             $("#div1").children().click(function () {
                 $(this).siblings("a").removeClass("layui-this");
                 $(this).addClass("layui-this");
             });
+            /*点击样式更换*/
             $("#span1").children().click(function () {
                 $(this).siblings().removeClass("layui-this");
                 $(this).addClass("layui-this");
             });
+            /*头像、用户名的显示*/
             $.ajax({
                 type:"POST",
                 url:"/show",
@@ -33,6 +36,24 @@
                 }
 
             });
+            /*本周热议*/
+            $.ajax({
+                type:"POST",
+                url:"/showAll?ec="+1,
+                dataType:"json",
+                success:function (data) {
+                    var st = '<dt class="fly-panel-title">本周热议</dt>';
+                    for(var i=0;i<data.length;i++){
+                        st = st +
+                            '<dd>\n' +
+                            '    <a href="jie/detail.html?topic='+data[i].id+'">' + data[i].title + '</a>\n' +
+                            '    <span><i class="iconfont icon-pinglun1"></i>'+data[i].replyCount+'</span>\n' +
+                            '</dd>';
+                    }
+                    $("#reyi").html(st);
+                }
+            });
+            /*未完。已结分类*/
             $.ajax({
                 type:"POST",
                 url:"/showAll?ec=0",
@@ -60,6 +81,24 @@
                         /*<i class="iconfont icon-renzheng" title="认证信息：XXX"></i><i class="layui-badge fly-badge-vip">VIP3</i>*/
                     }
                     $("#ulShow").html(string);
+                }
+            })
+            /*回帖周榜*/
+            $.ajax({
+                type:"POST",
+                url:"/huiTie",
+                dataType:"json",
+                success:function (data) {
+                    var st = '';
+                    for(var i=0;i<data.length;i++){
+                        st = st +
+                            '<dd >\n' +
+                            '<a href="user/home.html">\n' +
+                            '<img src="'+data[i].user_img+'"><cite>'+data[i].user_name+'</cite><i>'+data[i].count+'次回答</i>\n' +
+                            '</a>\n' +
+                            '</dd>';
+                    }
+                    $("#huitie").html(st);
                 }
             })
         })
@@ -130,10 +169,6 @@
             <span class="fly-search"><i class="layui-icon"></i></span>
             <a href="jie/add.html" class="layui-btn">发表新帖</a>
         </div>
-        <!--<div class="layui-hide-sm layui-show-xs-block"
-             style="margin-top: -10px; padding-bottom: 10px; text-align: center;">
-            <a href="jie/add.html" class="layui-btn">发表新帖</a>
-        </div>-->
     </div>
 </div>
 
@@ -295,9 +330,8 @@
                     </span>
                 </div>
 
-                <ul id="ulShow" class="fly-list">
-                    <!--此处显示发过的帖子-->
-                </ul>
+                <!--此处显示发过的帖子-->
+                <ul id="ulShow" class="fly-list"></ul>
 
                 <div style="text-align: center">
                     <div class="laypage-main">
@@ -313,26 +347,16 @@
                 <h3 class="fly-panel-title">温馨通道</h3>
                 <ul class="fly-panel-main fly-list-static">
                     <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云)
-                            仓库，欢迎Star</a>
+                        推荐网站：<a href="http://www.github.com" target="_blank">www.github.com</a>
                     </li>
                     <li>
-                        <a href="http://fly.layui.com/jie/5366/" target="_blank">
-                            layui 常见问题的处理和实用干货集锦
-                        </a>
+                        推荐模板：<a href="http://www.layui.com" target="_blank">www.layui.com</a>
                     </li>
                     <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云)
-                            仓库，欢迎Star</a>
+                        搜书网站：<a href="https://www.jiumodiary.com" target="_blank">www.jiumodiary.com</a>
                     </li>
                     <li>
-                        <a href="http://fly.layui.com/jie/5366/" target="_blank">
-                            layui 常见问题的处理和实用干货集锦
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://fly.layui.com/jie/4281/" target="_blank">layui 的 GitHub 及 Gitee (码云)
-                            仓库，欢迎Star</a>
+                        本网站：<a href="https://github.com/wjianwu/YouGou" target="_blank">github.com/wjianwu/YouGou</a>
                     </li>
                 </ul>
             </div>
@@ -344,11 +368,11 @@
                     <i class="fly-mid"></i>
                     <a href="javascript:void(0)" class="fly-link" id="LAY_signinHelp">说明</a>
                     <i class="fly-mid"></i>
-                    <a href="javascript:void(0)" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>
+                    <a href="javascript:void(0)" class="fly-link">活跃榜</a>
                     <span class="fly-signin-days">已连续签到<cite>16</cite>天</span>
                 </div>
                 <div class="fly-panel-main fly-signin-main">
-                    <button class="layui-btn layui-btn-danger" id="LAY_signin">今日签到</button>
+                    <button id="qianDao" class="layui-btn layui-btn-danger" type="button">今日签到</button>
                     <span>可获得<cite>5</cite>飞吻</span>
 
                     <!-- 已签到状态 -->
@@ -357,123 +381,29 @@
                     <span>获得了<cite>20</cite>飞吻</span>
                     -->
                 </div>
+                <script>
+                    $("#qianDao").click(function () {
+                        $.ajax({
+                            type:"POST",
+                            url:"/qianDao",
+                            dataType:"json",
+                            success:function (data) {
+
+                            }
+                        })
+                    })
+                </script>
+
             </div>
 
             <div class="fly-panel fly-rank fly-rank-reply" id="LAY_replyRank">
                 <h3 class="fly-panel-title">回贴周榜</h3>
-                <dl>
+                <dl id="huitie">
                     <!--<i class="layui-icon fly-loading">&#xe63d;</i>-->
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
-                    <dd>
-                        <a href="user/home.html">
-                            <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"><cite>贤心</cite><i>106次回答</i>
-                        </a>
-                    </dd>
                 </dl>
             </div>
-
-            <dl class="fly-panel fly-list-one">
-                <dt class="fly-panel-title">本周热议</dt>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-                <dd>
-                    <a href="jie/detail.html">基于 layui 的极简社区页面模版</a>
-                    <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                </dd>
-
-                <!-- 无数据时 -->
-                <!--
-                <div class="fly-none">没有相关数据</div>
-                -->
-            </dl>
+            <!--本周热议-->
+            <dl id="reyi" class="fly-panel fly-list-one"></dl>
 
             <div class="fly-panel">
                 <div class="fly-panel-title">

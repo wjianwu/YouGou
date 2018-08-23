@@ -48,5 +48,16 @@ public class TopicServiceImpl implements TopicService {
 		return topicDao.selectByPrimaryKey(topicId);
 	}
 
+	@Override
+	public boolean replyCount(int topicId) {
+		int rep = topicDao.selectByTopicId(topicId);
+		return topicDao.replyCount(topicId,rep+1) > 0;
+	}
+
+	@Override
+	public Topic getById(int topicId) {
+		return topicDao.selectByPrimaryKey(topicId);
+	}
+
 
 }

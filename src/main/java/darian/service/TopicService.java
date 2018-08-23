@@ -23,4 +23,10 @@ public interface TopicService {
 
 	Topic getDetail(int topicId);
 
+	//更新回复数量
+	boolean replyCount(int topicId);
+
+	//主键查topic
+	Topic getById(int topicId);
+
 }

@@ -1,9 +1,11 @@
 package darian.dao;
 
 import darian.entity.Comment;
+import darian.entity.Define;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface CommentDao {
     int deleteByPrimaryKey(Integer id);
@@ -17,5 +19,8 @@ public interface CommentDao {
     int updateByPrimaryKey(Comment record);
 
     //查询当前帖子的所有评论
-	List showComment(@Param("topicId") int topicId);
+	List<Comment> showComment(@Param("topicId") int topicId);
+
+	//回帖周榜
+	List<Define> huiTie();
 }

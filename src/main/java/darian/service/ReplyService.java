@@ -1,6 +1,7 @@
 package darian.service;
 
 import darian.entity.Comment;
+import darian.entity.Define;
 
 import java.util.List;
 
@@ -10,5 +11,8 @@ public interface ReplyService {
 	boolean subComment(Comment comment);
 
 	//显示当前帖子的所有评论
-	List<Comment> showComment(int topicId);
+	List showComment(int topicId);
+
+	//回帖周榜
+	List<Define> huiTie();
 }

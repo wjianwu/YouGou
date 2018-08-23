@@ -346,7 +346,7 @@ layui.define(['layer', 'laytpl', 'form', 'element', 'upload', 'util'], function(
     var othis = $(this);
     if(othis.hasClass(DISABLED)) return;
 
-    fly.json('/sign/in', {
+    fly.json('/qiandao', {
       token: signRender.token || 1
     }, function(res){
       signRender(res.data);

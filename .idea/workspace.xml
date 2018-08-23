@@ -6,12 +6,32 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
+    <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="2018/8/23 second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestMbg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/darian/controller/QianDaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/darian/entity/Define.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/darian/service/QianDaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/QianDaoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/entity/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/entity/Reply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/ReplyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/ReplyDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/darian/entity/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/entity/Reply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ReplyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ReplyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/darian/dao/TopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SSM_war_exploded/WEB-INF/classes/mapper/TopicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/dao/CommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/darian/dao/TopicDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TopicDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/jie/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/jie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/res/mods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/mods/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,59 +65,7 @@
     <favorites_list name="SSM" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/html/index-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2439">
-              <caret line="520" column="6" lean-forward="true" selection-start-line="520" selection-start-column="6" selection-end-line="520" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="389" column="30" lean-forward="true" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="30" />
-              <folding>
-                <element signature="e#7901#11965#0" />
-                <element signature="n#dd#1;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#2;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#3;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#4;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#5;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#6;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#7;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#8;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#dd#9;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#16333#16476#0" />
-                <element signature="e#16570#16598#0" />
-                <element signature="e#16633#16904#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/general.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#homeShow#0" />
-                <element signature="n#!!block;n#logOut#0" />
-                <element signature="n#!!block;n#showByEnable#0" />
-                <element signature="n#!!block;n#showAllByEc#0" />
-                <element signature="n#!!block;n#getUrlParam#0" />
-                <element signature="n#!!block;n#subComment#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,11 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/html/user/forget.html" />
-        <option value="$PROJECT_DIR$/web/html/user/activate.html" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/extra/Email.java" />
-        <option value="$PROJECT_DIR$/web/html/index.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/html/user/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/TestMbg.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
@@ -152,32 +115,37 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/SmallBlockServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/service/SmallBlockService.java" />
-        <option value="$PROJECT_DIR$/web/html/jie/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
         <option value="$PROJECT_DIR$/web/res/layui/layui.js" />
         <option value="$PROJECT_DIR$/web/res/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/web/html/common/footer.html" />
-        <option value="$PROJECT_DIR$/web/html/index-2.html" />
         <option value="$PROJECT_DIR$/web/html/common/filter.html" />
         <option value="$PROJECT_DIR$/web/json/signin.js" />
         <option value="$PROJECT_DIR$/web/res/layui/layui.all.js" />
         <option value="$PROJECT_DIR$/web/res/layui/lay/modules/tree.js" />
         <option value="$PROJECT_DIR$/web/js/ShowByClassId.js" />
-        <option value="$PROJECT_DIR$/web/res/mods/index.js" />
         <option value="$PROJECT_DIR$/web/html/jie/add.html" />
-        <option value="$PROJECT_DIR$/src/main/java/mbg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/js/general.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml" />
+        <option value="$PROJECT_DIR$/web/html/jie/index.html" />
+        <option value="$PROJECT_DIR$/web/html/jie/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/entity/Define.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/dao/CommentDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" />
-        <option value="$PROJECT_DIR$/web/html/jie/detail.html" />
-        <option value="$PROJECT_DIR$/web/js/general.js" />
+        <option value="$PROJECT_DIR$/web/res/mods/index.js" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mbg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Sign.java" />
+        <option value="$PROJECT_DIR$/web/html/index-2.html" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/service/QianDaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/QianDaoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/QianDaoController.java" />
       </list>
     </option>
   </component>
@@ -262,92 +230,12 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="jie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.SM">
+  <component name="RunManager" selected="JUnit.TestMbg.testMbg">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -625,7 +513,7 @@
       <workItem from="1534812123657" duration="36439000" />
       <workItem from="1534903002322" duration="25719000" />
       <workItem from="1534948143662" duration="20000" />
-      <workItem from="1534984488865" duration="12311000" />
+      <workItem from="1534984488865" duration="36840000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -732,19 +620,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535005337748</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2018/8/23 second commit">
+      <created>1535005631531</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535005631531</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMbg_testMbg - 2018.08.14 at 09h 37m 29s.xml">
-      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMbg_testMbg - 2018.08.14 at 09h 55m 03s.xml">
-      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMbg_testMbg - 2018.08.14 at 10h 21m 08s.xml">
-      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test_testTime - 2018.08.15 at 21h 21m 39s.xml">
       <configuration name="Test.testTime" configurationId="JUnit" />
     </history-entry>
@@ -766,9 +652,18 @@
     <history-entry file="TestMbg_testMbg - 2018.08.23 at 09h 24m 05s.xml">
       <configuration name="TestMbg.testMbg" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestMbg_testMbg - 2018.08.23 at 21h 53m 53s.xml">
+      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMbg_testMbg - 2018.08.23 at 21h 56m 09s.xml">
+      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMbg_testMbg - 2018.08.23 at 22h 00m 47s.xml">
+      <configuration name="TestMbg.testMbg" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259132000" />
+    <option name="totallyTimeSpent" value="283661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -792,10 +687,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.40527952" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.17391305" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.17569546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.1852123" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
@@ -827,7 +722,8 @@
     <MESSAGE value="2018/8/22 first commit" />
     <MESSAGE value="2018/8/22 second commit" />
     <MESSAGE value="2018/8/23 first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/8/23 first commit" />
+    <MESSAGE value="2018/8/23 second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/8/23 second commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,106 +735,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/html/jie/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="1377" column="1" selection-start-line="1377" selection-start-column="1" selection-end-line="1377" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2486">
-          <caret line="122" column="14" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/link.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/user-nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/header.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/common/filter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/case/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-726" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/json/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1190" lean-forward="true" selection-start-column="1190" selection-end-column="1190" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/res/images/fly.jpg">
@@ -1010,34 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/mods/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="126" column="8" lean-forward="true" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestMbg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mbg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Reply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1059,16 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
@@ -1076,79 +837,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReplyDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        <state relative-caret-position="-462">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TopicDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Defult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        <state relative-caret-position="233">
+          <caret line="53" column="72" lean-forward="true" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/CommentDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Define.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="110">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReplyDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-719">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/index-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2439">
-          <caret line="520" column="6" lean-forward="true" selection-start-line="520" selection-start-column="6" selection-end-line="520" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="389" column="30" lean-forward="true" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="30" />
+        <state relative-caret-position="305">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
+            <element signature="e#718#1416#0" />
+            <element signature="e#1380#1805#0" />
+            <element signature="e#1907#2596#0" />
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1452#1595#0" />
+            <element signature="e#1689#1717#0" />
+            <element signature="e#1752#2023#0" />
             <element signature="e#7901#11965#0" />
-            <element signature="n#dd#1;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#2;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#3;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#4;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#5;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#6;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#7;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#8;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dd#9;n#dl#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#16333#16476#0" />
-            <element signature="e#16570#16598#0" />
-            <element signature="e#16633#16904#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/jie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="69" selection-end-column="15" />
+          <folding>
+            <element signature="e#577#720#0" />
+            <element signature="e#739#805#0" />
+            <element signature="e#814#842#0" />
+            <element signature="e#935#1052#0" />
+            <element signature="e#1122#1238#0" />
+            <element signature="e#1278#1615#0" />
+            <element signature="e#1650#2279#0" />
+            <element signature="e#2317#3685#0" />
+            <element signature="n#style#0;n#hr#0;n#dl#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -1156,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/web/js/general.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
+          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#homeShow#0" />
@@ -1165,6 +963,165 @@
             <element signature="n#!!block;n#showAllByEc#0" />
             <element signature="n#!!block;n#getUrlParam#0" />
             <element signature="n#!!block;n#subComment#0" />
+            <element signature="n#!!block;n#showComment#0" />
+            <element signature="n#!!block;n#showComment#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/json/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret column="1190" lean-forward="true" selection-start-column="1190" selection-end-column="1190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/mods/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="348" column="22" selection-start-line="348" selection-start-column="22" selection-end-line="348" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/SignDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mbg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestMbg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/SignDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/index-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="390" lean-forward="true" selection-start-line="390" selection-end-line="390" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#656#784#0" />
+            <element signature="e#863#988#0" />
+            <element signature="e#1036#1413#0" />
+            <element signature="e#1456#2149#0" />
+            <element signature="e#2195#4109#0" />
+            <element signature="e#4151#4807#0" />
+            <element signature="e#8340#15209#0" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/QianDaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/QianDaoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1447">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/QianDaoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="39" column="73" lean-forward="true" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
