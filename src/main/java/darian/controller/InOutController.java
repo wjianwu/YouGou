@@ -45,7 +45,10 @@ public class InOutController {
 		//邮箱账户，密码，昵称，当前时间
 		User user = new User();
 		user.setNickname(request.getParameter("nickname"));
+		user.setUsername("UserName");
 		user.setPassword(request.getParameter("password"));
+		user.setAmount(0);
+		user.setEnable(true);
 		user.setCreateOn(new Timestamp(new Date().getTime()));
 
 		boolean flag = userService.registerVerify(user);

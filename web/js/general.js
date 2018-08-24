@@ -21,7 +21,7 @@ function homeShow(classId) {
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite>" + data[i].userName + "</cite></a>\n" +
                     "<span>" + new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/, ' ') + "</span>\n" +
-                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"fly点\"><i class=\"iconfont icon-kiss\"></i>" + data[i].rank + "</span>\n" +
+                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"fly点\">积分点-" + data[i].rank + "</span>\n" +
                     "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i>" + data[i].replyCount + "</span>\n" +
                     "</div></li>";
             }
@@ -77,7 +77,7 @@ function showByEnable(enable) {
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite id=\"cite" + i + "\">" + data[i].userName + "</cite></a>\n" +
                     "<span>发表于：" + new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/, ' ') + "</span>\n" +
-                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\">悬赏fly点<i class=\"iconfont icon-kiss\"></i>" + data[i].rank + "</span>\n" +
+                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\">积分点-" + data[i].rank + "</span>\n" +
                     "状态：<span class=\"layui-badge " + insertClass + " layui-hide-xs\">" + data[i].enable + "</span>\n" +
                     "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i> " + data[i].replyCount + "</span>\n" +
                     "</div>\n" +
@@ -115,7 +115,7 @@ function showAllByEc(ec) {
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite id=\"cite" + i + "\">" + data[i].userName + "</cite></a>\n" +
                     "<span>发表于：" + new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/, ' ') + "</span>\n" +
-                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\">悬赏fly点<i class=\"iconfont icon-kiss\"></i>" + data[i].rank + "</span>\n" +
+                    "<span class=\"fly-list-kiss layui-hide-xs\" title=\"悬赏Fly点\">积分点-" + data[i].rank + "</span>\n" +
                     "状态：<span class=\"layui-badge " + insertClass + " layui-hide-xs\">" + data[i].enable + "</span>\n" +
                     "<span class=\"fly-list-nums\"><i class=\"iconfont icon-pinglun1\" title=\"回答\"></i> " + data[i].replyCount + "</span>\n" +
                     "</div>\n" +
@@ -262,3 +262,20 @@ function showComment_2() {
         }
     })
 }
+
+/*签到信息显示*/
+function showQianDao() {
+    $.ajax({
+        type:"POST",
+        url:"/showSign",
+        dataType:"json",
+        success:function (data) {
+            var day = data.contin;
+            var rank = 0;
+            if(day<3){ rank = 10; }else if(day>3&&day<7){ rank = 30; }else { rank = 50; }
+            $("#contin").text(day);
+            $("#rank2").text(rank);
+        }
+    })
+}
+
