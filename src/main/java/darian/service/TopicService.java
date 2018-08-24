@@ -1,5 +1,6 @@
 package darian.service;
 
+import darian.entity.Collect;
 import darian.entity.Topic;
 
 import java.util.List;
@@ -28,5 +29,8 @@ public interface TopicService {
 
 	//主键查topic
 	Topic getById(int topicId);
+
+	//收藏帖子
+	boolean insertCollect(Collect collect);
 
 }

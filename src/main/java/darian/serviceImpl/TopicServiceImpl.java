@@ -1,6 +1,8 @@
 package darian.serviceImpl;
 
+import darian.dao.CollectDao;
 import darian.dao.TopicDao;
+import darian.entity.Collect;
 import darian.entity.Topic;
 import darian.service.TopicService;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,8 @@ public class TopicServiceImpl implements TopicService {
 
 	@Resource
 	private TopicDao topicDao;
+	@Resource
+	private CollectDao collectDao;
 
 	@Override
 	public boolean issueTopic(Topic topic) {
@@ -57,6 +61,11 @@ public class TopicServiceImpl implements TopicService {
 	@Override
 	public Topic getById(int topicId) {
 		return topicDao.selectByPrimaryKey(topicId);
+	}
+
+	@Override
+	public boolean insertCollect(Collect collect) {
+		return collectDao.insert(collect) > 0;
 	}
 
 

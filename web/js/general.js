@@ -279,3 +279,21 @@ function showQianDao() {
     })
 }
 
+/*收藏*/
+function collect(coll) {
+    var topicId = getUrlParam("topic");
+    $.ajax({
+        type:"POST",
+        url:"/collect?topicId="+topicId,
+        dataType:"json",
+        success:function (data) {
+            if(data.status === "ok"){
+                layer.msg("收藏成功",{icon:6});
+                $("#collect").html('<span id="coll" class="layui-btn layui-btn-xs jie-admin" style="background-color:#ccc;">已收藏</span>');
+            }else {
+                layer.msg("收藏失败",{icon:5});
+            }
+        }
+    })
+}
+

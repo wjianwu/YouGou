@@ -172,7 +172,7 @@
                 var uls1 = "<ul class=\"mine-view jie-row\">";
                 var bod = "";
                 for(var i = data.length-1; i>=0; i--){
-                    var lis1 = "<li><a class=\"jie-title\" href=\"../jie/detail.html\" target=\"_blank\">";
+                    var lis1 = "<li><a class=\"jie-title\" href=\"../jie/detail.html?topic="+data[i].id+"\">";
                     var title = data[i].title + "</a><i>";
                     var tim = new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ');
                     var al = "</i><a class=\"mine-edit\" href=\"../jie/edit/8116\">编辑</a><em>";

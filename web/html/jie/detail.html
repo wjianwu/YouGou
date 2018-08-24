@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>详情</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="交流社区">
+    <meta name="keywords" content="Java社区">
     <meta name="description" content="YouGou社区是一个致力于交流的小型网站">
     <link rel="stylesheet" href="../../res/layui/css/layui.css">
     <link rel="stylesheet" href="../../res/css/global.css">
@@ -26,7 +26,7 @@
                     $("#headUrl2").attr("src", data.imgUrl);
                     $("#citeText2").text(data.userName);
                     $("#createOn").text(new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/, ' '));
-                    $("#rank").text("悬赏：" + data.rank + "飞吻");
+                    $("#rank").text("悬赏：" + data.rank + "积分点");
                     $("#body").html(data.body);
 
                 }
@@ -99,18 +99,6 @@
         <a class="fly-logo" href="/html/index-2.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
-        <ul class="layui-nav fly-nav layui-hide-xs">
-            <li class="layui-nav-item layui-this">
-                <a href="#"><i class="iconfont icon-jiaoliu"></i>交流</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
-            </li>
-        </ul>
-
         <ul class="layui-nav fly-nav-user">
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
@@ -140,11 +128,11 @@
             <ul class="layui-clear">
                 <li class="layui-hide-xs"><a href="/html/index-2.html">首页</a></li>
                 <li class="layui-this"><a href="">提问</a></li>
-                <li><a href="">分享<span class="layui-badge-dot"></span></a></li>
-                <li><a href="">讨论</a></li>
-                <li><a href="">建议</a></li>
-                <li><a href="">公告</a></li>
-                <li><a href="">动态</a></li>
+                <li><a href="../jie/index.html">分享<span class="layui-badge-dot"></span></a></li>
+                <li><a href="../jie/index.html">Java基础</a></li>
+                <li><a href="../jie/index.html">Java新技术</a></li>
+                <li><a href="../jie/index.html">Java求职宝典</a></li>
+                <li><a href="../jie/index.html">动态</a></li>
                 <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
 
                 <!-- 用户登入后显示 -->
@@ -191,6 +179,10 @@
                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="1">加精</span>
                         <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="0"
                               style="background-color:#ccc;">取消加精</span>
+
+                        <i id="collect">
+                            <span id="coll" onclick="collect(coll)" class="layui-btn layui-btn-xs jie-admin">收藏</span>
+                        </i>
                     </div>
                     <span class="fly-list-nums">
                         <i class="iconfont" title="回答">&#xe60c;</i>
@@ -335,14 +327,14 @@
                     这里可作为广告区域
                 </div>
                 <div class="fly-panel-main">
-                    <a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu"
-                       time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>
+                    <a href="https://github.com/wjianwu" target="_blank" class="fly-zanzhu"
+                       time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">申请</a>
                 </div>
             </div>
 
             <div class="fly-panel" style="padding: 20px 0; text-align: center;">
                 <img src="../../res/images/weixin.jpg" style="max-width: 100%;" alt="layui">
-                <p style="position: relative; color: #666;">微信扫码关注 layui 公众号</p>
+                <p style="position: relative; color: #666;">微信扫码关注 微信 公众号</p>
             </div>
 
         </div>

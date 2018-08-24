@@ -1,5 +1,6 @@
 package darian.controller;
 
+import darian.entity.Collect;
 import darian.entity.SmallBlock;
 import darian.entity.Topic;
 import darian.entity.User;
@@ -100,5 +101,34 @@ public class TopicController {
 	public Topic showDetail(HttpServletRequest request){
 		int topicId = Integer.parseInt(request.getParameter("topicId"));
 		return topicService.getDetail(topicId);
+	}
+
+	//收藏帖子
+	@RequestMapping("/collect")
+	@ResponseBody
+	public Map collect(HttpServletRequest request){
+		HttpSession session = request.getSession();
+		User user = (User) session.getAttribute("user");
+
+		int userId = user.getId();
+		int topicId = Integer.parseInt(request.getParameter("topicId"));
+
+		Topic topic = topicService.getById(topicId);
+		String title = topic.getTitle();
+
+		Collect collect = new Collect();
+		collect.setUserId(userId);
+		collect.setTopicId(topicId);
+		collect.setTopicTitle(title);
+		collect.setCreateOn(new Timestamp(new Date().getTime()));
+
+		Map<String,Object> map = new HashMap<String, Object>();
+
+		if(topicService.insertCollect(collect)){
+			map.put("status","ok");
+		}else {
+			map.put("status","error");
+		}
+		return map;
 	}
 }

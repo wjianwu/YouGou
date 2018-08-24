@@ -42,21 +42,7 @@
             })
         });
         /*发布帖子*/
-        $("#issueBtn").click(function () {
-            $.ajax({
-                type: "POST",
-                url: "/issue",
-                data: $("#issueForm").serialize(),
-                dataType: "json",
-                success: function (data) {
-                    if (data.status == "ok") {
-                        layer.msg("发布成功", {icon: 6});
-                    } else {
-                        layer.msg("发布失败，原因未知", {icon: 5});
-                    }
-                }
-            })
-        });
+
     </script>
 </head>
 <body>
@@ -66,18 +52,6 @@
         <a class="fly-logo" href="/html/index-2.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
-        <ul class="layui-nav fly-nav layui-hide-xs">
-            <li class="layui-nav-item layui-this">
-                <a href="#"><i class="iconfont icon-jiaoliu"></i>交流</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
-            </li>
-        </ul>
-
         <ul class="layui-nav fly-nav-user">
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
@@ -122,9 +96,9 @@
                                             <option></option>
                                             <option value="0">提问</option>
                                             <option value="99">分享</option>
-                                            <option value="100">讨论</option>
-                                            <option value="101">建议</option>
-                                            <option value="168">公告</option>
+                                            <option value="100">Java基础</option>
+                                            <option value="101">Java新技术</option>
+                                            <option value="168">Java求职宝典</option>
                                             <option value="169">动态</option>
                                         </select>
                                     </div>
@@ -208,6 +182,23 @@
                                 <button id="issueBtn" class="layui-btn" type="button">立即发布</button>
                             </div>
                         </form>
+                        <script>
+                            $("#issueBtn").click(function () {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/issue",
+                                    data: $("#issueForm").serialize(),
+                                    dataType: "json",
+                                    success: function (data) {
+                                        if (data.status == "ok") {
+                                            layer.msg("发布成功", {icon: 6});
+                                        } else {
+                                            layer.msg("发布失败，原因未知", {icon: 5});
+                                        }
+                                    }
+                                })
+                            });
+                        </script>
                         <script>
 
                         </script>
