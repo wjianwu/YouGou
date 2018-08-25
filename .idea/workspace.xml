@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/jie/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/general.js" afterDir="false" />
@@ -50,37 +48,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="general.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/general.js">
+      <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="291" column="123" selection-start-line="291" selection-start-column="123" selection-end-line="291" selection-end-column="123" />
+            <state relative-caret-position="415">
+              <caret line="202" column="21" lean-forward="true" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="21" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#homeShow#0" />
-                <element signature="n#!!block;n#logOut#0" />
-                <element signature="n#!!block;n#showByEnable#0" />
-                <element signature="n#!!block;n#showAllByEc#0" />
-                <element signature="n#!!block;n#getUrlParam#0" />
-                <element signature="n#!!block;n#subComment#0" />
-                <element signature="n#!!block;n#showComment#0" />
-                <element signature="n#!!block;n#showComment_2#0" />
-                <element signature="n#!!block;n#showQianDao#0" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="method#issue#0;class#TopicController#0" />
+                <element signature="method#showDetail#0;class#TopicController#0" />
+                <element signature="method#collect#0;class#TopicController#0" />
+                <element signature="method#alCollect#0;class#TopicController#0" />
+                <element signature="e#4782#4798#0" expanded="true" />
+                <element signature="method#disCollect#0;class#TopicController#0" />
+                <element signature="e#5202#5218#0" expanded="true" />
+                <element signature="method#showCollect#0;class#TopicController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/user/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="180" column="60" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="60" />
+            <state relative-caret-position="319">
+              <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
               <folding>
-                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#span#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#577#720#0" />
+                <element signature="e#739#805#0" />
+                <element signature="e#814#842#0" />
+                <element signature="e#913#1232#0" />
+                <element signature="e#1270#2376#0" />
+                <element signature="e#738#1241#0" />
               </folding>
             </state>
           </provider>
@@ -116,8 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/web/html/case/case.html" />
         <option value="$PROJECT_DIR$/web/html/common/link.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/UploadController.java" />
@@ -160,13 +156,15 @@
         <option value="$PROJECT_DIR$/web/html/jie/index.html" />
         <option value="$PROJECT_DIR$/web/html/index-2.html" />
         <option value="$PROJECT_DIR$/web/html/jie/add.html" />
-        <option value="$PROJECT_DIR$/web/html/user/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/mbg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/html/jie/detail.html" />
         <option value="$PROJECT_DIR$/web/js/general.js" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/service/TopicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/dao/CollectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CollectDao.xml" />
+        <option value="$PROJECT_DIR$/web/html/user/index.html" />
       </list>
     </option>
   </component>
@@ -218,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -252,6 +249,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="darian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="darian" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="darian" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +336,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -595,7 +611,8 @@
       <workItem from="1534903002322" duration="25719000" />
       <workItem from="1534948143662" duration="20000" />
       <workItem from="1534984488865" duration="36918000" />
-      <workItem from="1535071828068" duration="25967000" />
+      <workItem from="1535071828068" duration="26060000" />
+      <workItem from="1535176556633" duration="8822000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -723,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535099714034</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2018/8/24 second commit">
+      <created>1535104642962</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535104642962</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -759,14 +783,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309706000" />
+    <option name="totallyTimeSpent" value="318621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.2189441" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.21860465" />
       <window_info anchor="bottom" id="Application Servers" order="3" weight="0.3284553" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -784,10 +808,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.33385092" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.3400621" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.16325037" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" weight="0.18740849" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
@@ -798,6 +822,40 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32868218" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="3" weight="0.3284553" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.26863354" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.21860465" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32142857" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.329429" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.32868218" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.18740849" />
+      <window_info anchor="right" id="Database" order="4" weight="0.17019667" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info id="Web" order="1" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Structure" order="7" sideWeight="0.500813" side_tool="true" weight="0.18305598" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39906833" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -822,7 +880,8 @@
     <MESSAGE value="2018/8/23 second commit" />
     <MESSAGE value="2018/8/23 third commit" />
     <MESSAGE value="2018/8/24 first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/8/24 first commit" />
+    <MESSAGE value="2018/8/24 second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018/8/24 second commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,9 +893,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/res/images/avatar/11.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/res/layui/lay/modules/tree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1025,9 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,11 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="107" column="43" lean-forward="true" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="43" />
-          <folding>
-            <element signature="method#qianDao#0;class#QianDaoController#0" />
-            <element signature="method#showSign#0;class#QianDaoController#0" />
-            <element signature="e#2627#2642#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,9 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25">
           <caret line="187" column="49" lean-forward="true" selection-start-line="187" selection-start-column="49" selection-end-line="187" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,41 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/CollectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="67" column="40" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="40" />
-          <folding>
-            <element signature="method#getAll#0;class#TopicServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-          <folding>
-            <element signature="method#issue#0;class#TopicController#0" />
-            <element signature="e#3812#3828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/user/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
@@ -1196,32 +1206,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1591">
-          <caret line="176" column="109" lean-forward="true" selection-start-line="176" selection-start-column="109" selection-end-line="176" selection-end-column="109" />
-          <folding>
-            <element signature="e#738#1241#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="180" column="60" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="60" />
-          <folding>
-            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#span#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/general.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="291" column="123" selection-start-line="291" selection-start-column="123" selection-end-line="291" selection-end-column="123" />
+        <state relative-caret-position="638">
+          <caret line="300" column="22" selection-start-line="300" selection-start-column="22" selection-end-line="300" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#homeShow#0" />
@@ -1233,7 +1221,88 @@
             <element signature="n#!!block;n#showComment#0" />
             <element signature="n#!!block;n#showComment_2#0" />
             <element signature="n#!!block;n#showQianDao#0" />
+            <element signature="n#!!block;n#collect#0" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#f#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/CollectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/serviceImpl/TopicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="method#getAll#0;class#TopicServiceImpl#0" />
+            <element signature="method#replyCount#0;class#TopicServiceImpl#0" />
+            <element signature="method#selectByUserTopic#0;class#TopicServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/service/TopicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CollectDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/TopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="202" column="21" lean-forward="true" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="21" />
+          <folding>
+            <element signature="method#issue#0;class#TopicController#0" />
+            <element signature="method#showDetail#0;class#TopicController#0" />
+            <element signature="method#collect#0;class#TopicController#0" />
+            <element signature="method#alCollect#0;class#TopicController#0" />
+            <element signature="e#4782#4798#0" expanded="true" />
+            <element signature="method#disCollect#0;class#TopicController#0" />
+            <element signature="e#5202#5218#0" expanded="true" />
+            <element signature="method#showCollect#0;class#TopicController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/jie/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+          <folding>
+            <element signature="e#577#720#0" />
+            <element signature="e#739#805#0" />
+            <element signature="e#814#842#0" />
+            <element signature="e#913#1232#0" />
+            <element signature="e#1270#2376#0" />
+            <element signature="e#738#1241#0" />
           </folding>
         </state>
       </provider>

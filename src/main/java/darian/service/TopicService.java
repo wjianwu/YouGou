@@ -30,7 +30,15 @@ public interface TopicService {
 	//主键查topic
 	Topic getById(int topicId);
 
+	//查询帖子是否被收藏
+	boolean selectByUserTopic(int userId,int topicId);
+
 	//收藏帖子
 	boolean insertCollect(Collect collect);
 
+	//取消收藏
+	boolean deleteByUserTopic(int userId,int topicId);
+
+	//查询用户已收藏的
+	List<Collect> selectAllByUser(int userId);
 }

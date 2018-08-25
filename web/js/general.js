@@ -280,18 +280,36 @@ function showQianDao() {
 }
 
 /*收藏*/
-function collect(coll) {
+function collect() {
     var topicId = getUrlParam("topic");
     $.ajax({
         type:"POST",
         url:"/collect?topicId="+topicId,
         dataType:"json",
         success:function (data) {
-            if(data.status === "ok"){
+            if(data.status == "ok"){
                 layer.msg("收藏成功",{icon:6});
-                $("#collect").html('<span id="coll" class="layui-btn layui-btn-xs jie-admin" style="background-color:#ccc;">已收藏</span>');
+                $("#collect").html('<span id="coll" onclick="disCollect()" class="layui-btn layui-btn-xs jie-admin" style="background-color:#ccc;">已收藏</span>');
             }else {
                 layer.msg("收藏失败",{icon:5});
+            }
+        }
+    })
+}
+
+/*取消收藏*/
+function disCollect() {
+    var topicId = getUrlParam("topic");
+    $.ajax({
+        type:"POST",
+        url:"/disCollect?topicId="+topicId,
+        dataType:"json",
+        success:function (data) {
+            if(data.status == "ok"){
+                layer.msg("已取消收藏",{icon:6});
+                $("#collect").html('<span id="coll" onclick="collect()" class="layui-btn layui-btn-xs jie-admin">收藏</span>');
+            }else {
+                layer.msg("取消失败",{icon:5});
             }
         }
     })

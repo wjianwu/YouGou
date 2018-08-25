@@ -68,5 +68,18 @@ public class TopicServiceImpl implements TopicService {
 		return collectDao.insert(collect) > 0;
 	}
 
+	@Override
+	public boolean selectByUserTopic(int userId, int topicId) {
+		return collectDao.selectByUserTopic(userId,topicId)==null;
+	}
 
+	@Override
+	public boolean deleteByUserTopic(int userId, int topicId) {
+		return collectDao.deleteByUserTopic(userId,topicId) == 1;
+	}
+
+	@Override
+	public List<Collect> selectAllByUser(int userId) {
+		return collectDao.selectAllByUser(userId);
+	}
 }
