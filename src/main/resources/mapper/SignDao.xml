@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="darian.dao.SignDao">
+    <resultMap id="BaseResultMap" type="darian.entity.Sign">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="rank" property="rank" jdbcType="INTEGER"/>
+        <result column="contin" property="contin" jdbcType="INTEGER"/>
+        <result column="enable" property="enable" jdbcType="BIT"/>
+        <result column="sign_time" property="signTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sign
+    where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="darian.entity.Sign">
+    insert into sign (id, user_id, rank, 
+      contin, enable, sign_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{rank,jdbcType=INTEGER}, 
+      #{contin,jdbcType=INTEGER}, #{enable,jdbcType=BIT}, #{signTime,jdbcType=TIMESTAMP}
+      )
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="darian.entity.Sign">
+    update sign
+    set user_id = #{userId,jdbcType=INTEGER},
+      rank = #{rank,jdbcType=INTEGER},
+      contin = #{contin,jdbcType=INTEGER},
+      enable = #{enable,jdbcType=BIT},
+      sign_time = #{signTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select id, user_id, rank, contin, enable, sign_time
+    from sign
+    where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+    select id, user_id, rank, contin, enable, sign_time
+    from sign
+    </select>
+    <select id="selectByUserId" resultMap="BaseResultMap">
+    select id, user_id, rank, contin, enable, sign_time
+    from sign
+    where user_id = #{userId,jdbcType=INTEGER}
+    </select>
+</mapper>
