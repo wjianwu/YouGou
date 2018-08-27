@@ -58,6 +58,7 @@ public class UploadController {
         if (userService.uploadImg(user.getId(), "/images/" + filename)) {
             //顺便把session里的值修改一下
 			userService.updateTopicImg(user.getId(), "/images/" + filename);
+			userService.updateCommentImg(user.getId(), "/images/" + filename);
             user.setHeadUrl("/images/"+filename);
             try {
                 file.transferTo(dest);

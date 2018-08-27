@@ -23,4 +23,6 @@ public interface CommentDao {
 
 	//回帖周榜
 	List<Define> huiTie();
+
+	int updateCommentImg(@Param("userId")int userId,@Param("filename")String filename);
 }

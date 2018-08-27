@@ -19,6 +19,7 @@ public interface UserService {
 	//更新头像的同时更新帖子表里面对应的头像
     boolean uploadImg(int id, String filename);
     boolean updateTopicImg(int id,String filename);
+    boolean updateCommentImg(int id,String filename);
 
     //修改密码
     boolean updatePwd(int id, String nowpass);

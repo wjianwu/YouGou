@@ -103,7 +103,7 @@ public class QianDaoController {
 
 		Date date = sign.getSignTime();
 		Date dateNow = new Date();
-		if(dateNow.getTime()>date.getTime()+60000){
+		if(dateNow.getTime()>date.getTime()+6000000){
 			//一分钟后可签到
 			sign.setEnable(false);//状态改成可签到
 			sign.setSignTime(new Timestamp(new Date().getTime()));//存进当前签到的时间

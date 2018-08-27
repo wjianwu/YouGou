@@ -26,17 +26,6 @@ function homeShow(classId) {
                     "</div></li>";
             }
             $("#ulShow").html(string);
-
-            var count = Math.ceil(data.length / 2);
-            if (count >= 2) {
-                var page = "";
-                for (var j = 1; j <= count; j++) {
-                    page = page + "<a id=\"" + j + "\" href=\"javascript:void(0)\">" + j + "</a>";
-                }
-                $("#page").html(page);
-            } else {
-                $("#page").html("");
-            }
         }
     });
 }
@@ -289,7 +278,7 @@ function collect() {
         success:function (data) {
             if(data.status == "ok"){
                 layer.msg("收藏成功",{icon:6});
-                $("#collect").html('<span id="coll" onclick="disCollect()" class="layui-btn layui-btn-xs jie-admin" style="background-color:#ccc;">已收藏</span>');
+                $("#collect").html('<span id="coll" onclick="disCollect()" class="layui-btn layui-btn-xs jie-admin" style="background-color:#ccc;">取消收藏</span>');
             }else {
                 layer.msg("收藏失败",{icon:5});
             }

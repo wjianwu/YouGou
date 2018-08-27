@@ -1,5 +1,6 @@
 package darian.serviceImpl;
 
+import darian.dao.CommentDao;
 import darian.dao.TopicDao;
 import darian.dao.UserDao;
 import darian.entity.User;
@@ -15,6 +16,8 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
     @Resource
     private TopicDao topicDao;
+    @Resource
+    private CommentDao commentDao;
 
     public User getUserById(int id) {
         return userDao.selectByPrimaryKey(id);
@@ -44,6 +47,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean updateTopicImg(int id, String filename) {
         return topicDao.updateTopicImg(id,filename) > 0;
+    }
+
+    @Override
+    public boolean updateCommentImg(int id, String filename) {
+        return commentDao.updateCommentImg(id,filename) > 0;
     }
 
     @Override
