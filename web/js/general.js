@@ -16,7 +16,7 @@ function homeShow(classId) {
                     data[i].replyCount = 0;
                 }
                 string = string +
-                    "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
+                    "<li><a href=\"../user/home.html?userId="+data[i].userid+"\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
                     "<h2><a class=\"layui-badge\">" + data[i].className + "</a><a href=\"detail.html?topic=" + data[i].id + "\">" + data[i].title + "</a></h2>\n" +
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite>" + data[i].userName + "</cite></a>\n" +
@@ -72,7 +72,7 @@ function showByEnable(enable) {
                 }
 
                 string = string +
-                    "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
+                    "<li><a href=\"user/home.html?userId="+data[i].userid+"\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
                     "<h2><a class=\"layui-badge\">" + data[i].className + "</a><a href=\"jie/detail.html?topic=" + data[i].id + "\">" + data[i].title + "</a></h2>\n" +
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite id=\"cite" + i + "\">" + data[i].userName + "</cite></a>\n" +
@@ -110,7 +110,7 @@ function showAllByEc(ec) {
                 }
 
                 string = string +
-                    "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
+                    "<li><a href=\"../html/user/home.html?userId="+data[i].userId+"\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
                     "<h2><a class=\"layui-badge\">" + data[i].className + "</a><a href=\"jie/detail.html?topic=" + data[i].id + "\">" + data[i].title + "</a></h2>\n" +
                     "<div class=\"fly-list-info\">\n" +
                     "<a href=\"user/home.html\" link><cite id=\"cite" + i + "\">" + data[i].userName + "</cite></a>\n" +

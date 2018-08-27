@@ -48,6 +48,7 @@
                     if(data.headUrl != null){
                         $("#headUrl").attr("src",data.headUrl);
                     }
+                    $("#href1").attr("href","../user/home.html"+data.id);
                 }
 
             });
@@ -85,7 +86,7 @@
                             data[i].replyCount = 0;
                         }
                         string = string +
-                            "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
+                            "<li><a href=\"../user/home.html?userId="+data[i].userid+"\" class=\"fly-avatar\"><img src=\"" + data[i].imgUrl + "\"></a>\n" +
                             "<h2><a class=\"layui-badge\">" + data[i].className + "</a><a href=\"detail.html?topic=" + data[i].id + "\">" + data[i].title + "</a></h2>\n" +
                             "<div class=\"fly-list-info\">\n" +
                             "<a href=\"user/home.html\" link><cite>" + data[i].userName + "</cite></a>\n" +
@@ -98,7 +99,6 @@
                 }
             });
         })
-
     </script>
 </head>
 <body>
@@ -131,7 +131,7 @@
                     <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
                     <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a>
                     </dd>
-                    <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
+                    <dd><a href="../user/home.html" id="href1"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
                     </dd>
                     <hr style="margin: 5px 0;">
                     <dd><a href="" style="text-align: center;">退出</a></dd>

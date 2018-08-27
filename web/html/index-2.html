@@ -33,6 +33,7 @@
                     if(data.headUrl != null){
                         $("#headUrl").attr("src",data.headUrl);
                     }
+                    $("#href1").attr("href","user/home.html?userId="+data.id);
                 }
 
             });
@@ -67,7 +68,7 @@
                         if(data[i].enable == 1){data[i].enable = "已结";}else {data[i].enable = "未完";insertClass = "";}
 
                         string = string +
-                            "<li><a href=\"user/home.html\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
+                            "<li><a href=\"user/home.html?userId="+data[i].userid+"\" class=\"fly-avatar\"><img src=\""+data[i].imgUrl+"\"></a>\n" +
                             "<h2><a class=\"layui-badge\">"+data[i].className+"</a><a href=\"jie/detail.html?topic="+data[i].id+"\">"+data[i].title+"</a></h2>\n" +
                             "<div class=\"fly-list-info\">\n" +
                             "<a href=\"user/home.html\" link><cite id=\"cite"+i+"\">"+data[i].userName+"</cite></a>\n" +
@@ -93,7 +94,7 @@
                     for(var i=0;i<data.length;i++){
                         st = st +
                             '<dd >\n' +
-                            '<a href="user/home.html">\n' +
+                            '<a href="user/home.html?userId='+data[i].user_id+'">\n' +
                             '<img src="'+data[i].user_img+'"><cite>'+data[i].user_name+'</cite><i>'+data[i].count+'次回答</i>\n' +
                             '</a>\n' +
                             '</dd>';
@@ -121,7 +122,6 @@
                 dataType:"json",
                 success:function (data) {
                     if(data.status == "ok"){
-                        alert("今日可签到");
                     }else {
                         var st = '<button class="layui-btn layui-btn-disabled">今日已签到</button>'+
                             '<span>获得了<cite id="rank2">0</cite>积分点</span>';
@@ -187,7 +187,7 @@
                 <dl class="layui-nav-child">
                     <dd><a href="user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
                     <dd><a href="user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a></dd>
-                    <dd><a href="user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
+                    <dd><a href="user/home.html" id="href1"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
                     </dd>
                     <hr style="margin: 5px 0;">
                     <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>

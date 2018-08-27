@@ -27,10 +27,16 @@ public class UserController {
 
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-		System.out.println(user);
         return userService.getUserById(user.getId());
     }
 
+    //显示其他用户信息
+	@RequestMapping("/showUser")
+	@ResponseBody
+	public User showUser(HttpServletRequest request){
+		int userId = Integer.parseInt(request.getParameter("userId"));
+		return userService.getUserById(userId);
+	}
     //修改基本资料
     @RequestMapping("/updateUser")
     @ResponseBody

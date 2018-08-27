@@ -43,7 +43,7 @@
                     <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
                     <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a>
                     </dd>
-                    <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
+                    <dd><a href="../user/home.html" id="href1"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
                     </dd>
                     <hr style="margin: 5px 0;">
                     <dd><a href="javascript:void(0)" onclick="logOut()" style="text-align: center;">退出</a></dd>
@@ -190,25 +190,34 @@
         fly: 'index'
     }).use('fly');
     $(function () {
+        var userId = getUrlParam("userId");
         $.ajax({
             type: "POST",
             url: "/show",
             dataType: "json",
             success: function (data) {
                 $("#citeText").text(data.nickname + "(" + data.username + ")");
-                $("#citeText2").text(data.nickname + "(" + data.username + ")");
-                $("#rank").text(data.amount + "贡献点");
                 $("#headUrl").attr("src", data.headUrl);
+                $("#href1").attr("href","../user/home.html?userId="+data.id);
+            }
+
+        });
+        $.ajax({
+            type: "POST",
+            url: "/showUser?userId="+userId,
+            dataType: "json",
+            success: function (data) {
+                $("#citeText2").text(data.nickname + "(" + data.username + ")");
                 $("#bigHeadUrl").attr("src", data.headUrl);
                 $("#L_sign").text(data.signature);
                 $("#create_on").text(new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/,' '));
+                $("#rank").text(data.amount + "积分点");
                 if(data.sex == "男"){
                     $("#sex").addClass("icon-nan");
                 }else {
                     $("#sex").addClass("icon-nv");
                 }
             }
-
         })
     })
 </script>
