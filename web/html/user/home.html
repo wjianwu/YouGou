@@ -223,7 +223,7 @@
                 for (var i=0;i<data.length;i++){
                     st = st + '<li>\n' +
                         '<p>\n' +
-                        '<span>'+new Date(parseInt(data.createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+'前</span>\n' +
+                        '<span>'+new Date(parseInt(data[i].createOn)).toLocaleString().replace(/:\d{1,2}$/,' ')+'前</span>\n' +
                         '在<a href="" target="_blank">'+data[i].topicId+'</a>中评论：\n' +
                         '</p>\n' +
                         '<div class="home-dacontent">'+data[i].comment+'</div>\n' +
