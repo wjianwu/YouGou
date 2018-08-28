@@ -71,7 +71,6 @@ public class ReplyController {
 		int topicId = Integer.parseInt(request.getParameter("topicId"));
 		return replyService.showComment(topicId);
 	}
-
 	/*回帖周榜*/
 	@RequestMapping("/huiTie")
 	@ResponseBody
@@ -79,4 +78,11 @@ public class ReplyController {
 		return replyService.huiTie();
 	}
 
+	/*显示用户的所有评论*/
+	@RequestMapping("/showReply")
+	@ResponseBody
+	public List showReply(HttpServletRequest request){
+		int userId = Integer.parseInt(request.getParameter("userId"));
+		return replyService.showReply(userId);
+	}
 }

@@ -29,4 +29,9 @@ public class ReplyServiceImpl implements ReplyService {
 	public List<Define> huiTie() {
 		return commentDao.huiTie();
 	}
+
+	@Override
+	public List showReply(int userId) {
+		return commentDao.showReply(userId);
+	}
 }

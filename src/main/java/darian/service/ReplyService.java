@@ -15,4 +15,7 @@ public interface ReplyService {
 
 	//回帖周榜
 	List<Define> huiTie();
+
+	//显示当前用户的所有评论
+	List showReply(int userId);
 }

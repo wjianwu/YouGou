@@ -25,4 +25,7 @@ public interface CommentDao {
 	List<Define> huiTie();
 
 	int updateCommentImg(@Param("userId")int userId,@Param("filename")String filename);
+
+	//显示当前用户的评论
+	List<Comment> showReply(@Param("userId") int userId);
 }

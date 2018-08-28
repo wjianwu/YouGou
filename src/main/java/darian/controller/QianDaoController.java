@@ -35,6 +35,11 @@ public class QianDaoController {
 		HttpSession session = request.getSession();
 		User user = (User)session.getAttribute("user");
 
+		//判断用户是否登录
+		if(user == null){
+			map.put("status","noLogin");
+			return map;
+		}
 		//判断签到表是否存在用户
 		Sign sign = qianDaoService.getSignByUserId(user.getId());
 
