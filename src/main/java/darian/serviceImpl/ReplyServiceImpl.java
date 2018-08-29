@@ -34,4 +34,14 @@ public class ReplyServiceImpl implements ReplyService {
 	public List showReply(int userId) {
 		return commentDao.showReply(userId);
 	}
+
+	@Override
+	public Comment dianZan(int id) {
+		return commentDao.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public boolean updateZan(Comment comment) {
+		return commentDao.updateByPrimaryKey(comment) > 0;
+	}
 }

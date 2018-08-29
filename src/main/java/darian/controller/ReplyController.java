@@ -35,7 +35,7 @@ public class ReplyController {
 		User user = (User)session.getAttribute("user");
 
 		Topic topic = topicService.getById(topicId);
-		if(topic.getUserid().equals(user.getId()) ){
+		if(topic.getUserid().equals(user.getId())){
 			map.put("eq",1);
 		}else {
 			map.put("eq",0);
@@ -84,5 +84,23 @@ public class ReplyController {
 	public List showReply(HttpServletRequest request){
 		int userId = Integer.parseInt(request.getParameter("userId"));
 		return replyService.showReply(userId);
+	}
+
+	/*点赞*/
+	@RequestMapping("/dianZan")
+	@ResponseBody
+	public Map dianZan(HttpServletRequest request){
+		Map<String,Object> map = new HashMap<String, Object>();
+
+		//评论表Id
+		int id = Integer.parseInt(request.getParameter("commentId"));
+		Comment comment = replyService.dianZan(id);
+		comment.setZanCount(comment.getZanCount()+1);
+		if(replyService.updateZan(comment)){
+			map.put("status","ok");
+		}else {
+			map.put("status","error");
+		}
+		return map;
 	}
 }

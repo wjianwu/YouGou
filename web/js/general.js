@@ -185,9 +185,9 @@ function showComment() {
                         '                            <p>'+data[i].comment+'</p>\n' +
                         '                        </div>\n' +
                         '                        <div class="jieda-reply">\n' +
-                        '                            <span class="jieda-zan" type="zan">\n' +
+                        '                            <span class="jieda-zan" id="zan" onclick="dianZan('+data[i].id+')">\n' +
                         '                                <i class="iconfont icon-zan"></i>\n' +
-                        '                                <em>'+data[i].zanCount+'</em>\n' +
+                        '                                <em id="zanCount">'+data[i].zanCount+'</em>\n' +
                         '                            </span>\n' +
                         '                            <span type="reply">\n' +
                         '                                <i class="iconfont icon-svgmoban53"></i>\n' +
@@ -235,7 +235,7 @@ function showComment_2() {
                         '                            <p>'+data[i].comment+'</p>\n' +
                         '                        </div>\n' +
                         '                        <div class="jieda-reply">\n' +
-                        '                            <span class="jieda-zan" type="zan">\n' +
+                        '                            <span class="jieda-zan" id="zan" onclick="dianZan('+data[i].id+')">\n' +
                         '                                <i class="iconfont icon-zan"></i>\n' +
                         '                                <em>'+data[i].zanCount+'</em>\n' +
                         '                            </span>\n' +
@@ -303,4 +303,22 @@ function disCollect() {
         }
     })
 }
+
+/*点赞*/
+function dianZan(id) {
+    $.ajax({
+        type:"POST",
+        url:"/dianZan?commentId="+id,
+        dataType:"json",
+        success:function (data) {
+            if(data.status == "ok"){
+                layer.msg("+1 点赞成功",{icon:6});
+                $("#zanCount").text(parseInt($("#zanCount").text())+1);
+            }else {
+                layer.msg("点赞失败，原因未知",{icon:5})
+            }
+        }
+    })
+}
+
 

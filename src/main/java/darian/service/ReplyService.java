@@ -18,4 +18,8 @@ public interface ReplyService {
 
 	//显示当前用户的所有评论
 	List showReply(int userId);
+
+	//点赞更新
+	Comment dianZan(int id);
+	boolean updateZan(Comment comment);
 }
