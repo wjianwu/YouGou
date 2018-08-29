@@ -7,13 +7,151 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-cate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/admin-rule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/cate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/city.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/echarts8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/member-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/member-del.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/member-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/member-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/member-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/order-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/order-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/role-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/unicode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/aiwrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/xadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/xcity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/lib/layui/layui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/ReplyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/jie/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/jie/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/general.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,31 +185,7 @@
     <favorites_list name="SSM" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="general.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/general.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="314" column="30" selection-start-line="314" selection-start-column="30" selection-end-line="314" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#homeShow#0" />
-                <element signature="n#!!block;n#logOut#0" />
-                <element signature="n#!!block;n#showByEnable#0" />
-                <element signature="n#!!block;n#showAllByEc#0" />
-                <element signature="n#!!block;n#getUrlParam#0" />
-                <element signature="n#!!block;n#subComment#0" />
-                <element signature="n#!!block;n#showComment_2#0" />
-                <element signature="n#!!block;n#showQianDao#0" />
-                <element signature="n#!!block;n#collect#0" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#!!block;n#disCollect#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,7 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/darian/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Topic.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/SmallBlockServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/service/SmallBlockService.java" />
@@ -152,6 +265,7 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/service/ReplyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/ReplyServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/js/general.js" />
+        <option value="$PROJECT_DIR$/web/css/xadmin.css" />
       </list>
     </option>
   </component>
@@ -190,8 +304,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-104" />
-    <option name="y" value="38" />
+    <option name="x" value="33" />
+    <option name="y" value="11" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
@@ -244,51 +358,12 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,22 +385,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IDEA\Projects\SSM\src\main\resources\mapper" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IDEA\Projects\SSM\web" />
-      <recent name="E:\IDEA\Projects\SSM\src\main\resources" />
-      <recent name="E:\IDEA\Projects\SSM\web\views" />
+      <recent name="E:\IDEA\Projects\SSM\web\js" />
+      <recent name="E:\IDEA\Projects\SSM\web\lib" />
+      <recent name="E:\IDEA\Projects\SSM\web\css" />
+      <recent name="E:\IDEA\Projects\SSM\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="darian.dao" />
       <recent name="darian.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEA\Projects\SSM\src\main\java" />
-      <recent name="E:\IDEA\Projects\SSM\web\html\jie" />
-      <recent name="E:\IDEA\Projects\SSM\web\res\images" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA\Projects\SSM\web\admin" />
+      <recent name="E:\IDEA\Projects\SSM\web\css" />
       <recent name="E:\IDEA\Projects\SSM\src\main\resources\mapper" />
-      <recent name="E:\IDEA\Projects\SSM\web\upload" />
+      <recent name="E:\IDEA\Projects\SSM\web" />
+      <recent name="E:\IDEA\Projects\SSM\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,95 +416,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.SM">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Email.testALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="darian.extra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="darian.extra" />
-      <option name="MAIN_CLASS_NAME" value="darian.extra.Email" />
-      <option name="METHOD_NAME" value="testALL" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="QianDaoController.IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="darian.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="darian.controller" />
-      <option name="MAIN_CLASS_NAME" value="darian.controller.QianDaoController" />
-      <option name="METHOD_NAME" value="IT" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestAll.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="darian.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="darian.test" />
-      <option name="MAIN_CLASS_NAME" value="darian.test.TestAll" />
-      <option name="METHOD_NAME" value="testAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestMbg.testMbg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestMbg" />
-      <option name="METHOD_NAME" value="testMbg" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -548,21 +538,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.SM" />
-      <item itemvalue="JUnit.Email.testALL" />
-      <item itemvalue="JUnit.TestMbg.testMbg" />
-      <item itemvalue="JUnit.QianDaoController.IT" />
-      <item itemvalue="JUnit.TestAll.testAll" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestAll.testAll" />
-        <item itemvalue="JUnit.TestMbg.testMbg" />
-        <item itemvalue="JUnit.QianDaoController.IT" />
-        <item itemvalue="JUnit.Email.testALL" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -596,7 +571,7 @@
       <workItem from="1535176556633" duration="9618000" />
       <workItem from="1535330301694" duration="21938000" />
       <workItem from="1535462690635" duration="4484000" />
-      <workItem from="1535546850129" duration="3557000" />
+      <workItem from="1535546850129" duration="5268000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -780,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535467131342</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="some changes">
+      <created>1535550652951</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1535550652951</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -816,11 +798,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349396000" />
+    <option name="totallyTimeSpent" value="351107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.2173913" />
@@ -841,10 +822,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.25465837" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.25310558" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.16544656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.3023426" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
@@ -895,28 +876,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReplyDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Defult.java" />
-    <entry file="file://$PROJECT_DIR$/web/json/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret column="1190" lean-forward="true" selection-start-column="1190" selection-end-column="1190" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/mods/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="348" column="22" selection-start-line="348" selection-start-column="22" selection-end-line="348" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/dao/SignDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1081,6 +1040,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/general.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="314" column="30" selection-start-line="314" selection-start-column="30" selection-end-line="314" selection-end-column="30" />
+        <state relative-caret-position="141">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#homeShow#0" />
@@ -1331,14 +1294,32 @@
             <element signature="n#!!block;n#showAllByEc#0" />
             <element signature="n#!!block;n#getUrlParam#0" />
             <element signature="n#!!block;n#subComment#0" />
+            <element signature="n#!!block;n#showComment#0" />
             <element signature="n#!!block;n#showComment_2#0" />
             <element signature="n#!!block;n#showQianDao#0" />
             <element signature="n#!!block;n#collect#0" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#!!block;n#disCollect#0" />
+            <element signature="n#!!block;n#f#0" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/font.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/xadmin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="201" column="37" selection-start-line="201" selection-start-column="37" selection-end-line="201" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/xadmin.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/admin-add.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
