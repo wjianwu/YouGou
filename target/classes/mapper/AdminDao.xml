@@ -31,4 +31,8 @@
     select id, account, password
     from admin
   </select>
+  <select id="selectByNameAndPwd" resultMap="BaseResultMap">
+    select id, account, password
+    from admin where account = {#name,jdbcType=VARCHAR} and password = {#password,jdbcType=VARCHAR}
+  </select>
 </mapper>

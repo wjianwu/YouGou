@@ -1,6 +1,7 @@
 package darian.dao;
 
 import darian.entity.Admin;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,4 +15,6 @@ public interface AdminDao {
     List<Admin> selectAll();
 
     int updateByPrimaryKey(Admin record);
+
+    Admin selectByNameAndPwd(@Param("name")String name, @Param("pwd")String pwd);
 }
