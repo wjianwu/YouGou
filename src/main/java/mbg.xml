@@ -48,6 +48,6 @@
     </javaClientGenerator>
 
 	<!-- 指定要逆向分析哪些表：根据表要创建javaBean -->
-    <table tableName="collect" domainObjectName="Collect"/>
+    <table tableName="admin" domainObjectName="Admin"/>
   </context>
 </generatorConfiguration>
