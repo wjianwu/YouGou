@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/font.css">
 	<link rel="stylesheet" href="../css/xadmin.css">
     <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../res/layui/layui.js"></script>
     <script src="../lib/layui/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="../js/xadmin.js"></script>
 
@@ -22,29 +23,31 @@
         <div class="message">Fly社区管理登录</div>
         <div id="darkbannerwrap"></div>
         
-        <form id="form1" method="post" class="layui-form" >
+        <form id="form1" method="post">
             <input name="name" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
             <hr class="hr15">
             <input name="pwd" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
             <hr class="hr15">
-            <input value="登录" style="width:100%;" type="button">
+            <input value="登录" style="width:100%;" type="button" id="adminLogin">
             <hr class="hr20" >
         </form>
-        <script>
-            $.ajax({
-                type:"POST",
-                url:"/verifyAdmin",
-                data:$("#form1").serialize(),
-                dataType:"json",
-                success:function (data) {
-                    if(data.status == "ok"){
-                        location.href = "index.html";
-                    }else {
-                        layer.msg("登录失败",{icon:5});
-                    }
-                }
-            })
-        </script>
     </div>
 </body>
+<script>
+    $("#adminLogin").click(function () {
+        $.ajax({
+            type:"POST",
+            url:"/verifyAdmin",
+            data:$("#form1").serialize(),
+            dataType:"json",
+            success:function (data) {
+                if(data.status == "ok"){
+                    location.href = "index.html";
+                }else {
+                    layer.msg("登录失败",{icon:5});
+                }
+            }
+        })
+    })
+</script>
 </html>

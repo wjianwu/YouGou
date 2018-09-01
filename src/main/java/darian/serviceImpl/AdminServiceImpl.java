@@ -14,9 +14,8 @@ public class AdminServiceImpl implements AdminService {
 	private AdminDao adminDao;
 
 	@Override
-	public boolean verifyNameAndPwd(String name, String pwd) {
+	public Admin verifyNameAndPwd(String name, String pwd) {
 
-		Admin admin = adminDao.selectByNameAndPwd(name,pwd);
-		return admin != null;
+		return adminDao.selectByNameAndPwd(name,pwd);
 	}
 }

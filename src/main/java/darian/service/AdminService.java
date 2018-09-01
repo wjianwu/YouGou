@@ -1,6 +1,8 @@
 package darian.service;
 
+import darian.entity.Admin;
+
 public interface AdminService {
 
-	boolean verifyNameAndPwd(String name,String pwd);
+	Admin verifyNameAndPwd(String name, String pwd);
 }
