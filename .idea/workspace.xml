@@ -9,7 +9,7 @@
     <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/user/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/reg.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
+      <file leaf-file-name="reg.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/user/reg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+            <state relative-caret-position="258">
+              <caret line="124" column="98" selection-start-line="124" selection-start-column="98" selection-end-line="124" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -56,10 +56,10 @@
       <file leaf-file-name="InOutController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="176">
+              <caret line="68" column="35" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="35" />
               <folding>
-                <element signature="e#701#717#0" expanded="true" />
+                <element signature="e#1274#1290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/res/layui/lay/modules/tree.js" />
         <option value="$PROJECT_DIR$/web/js/ShowByClassId.js" />
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/dao/TopicDao.java" />
@@ -144,8 +143,9 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" />
         <option value="$PROJECT_DIR$/web/html/user/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" />
+        <option value="$PROJECT_DIR$/web/html/user/reg.html" />
       </list>
     </option>
   </component>
@@ -517,7 +517,7 @@
       <workItem from="1535636683743" duration="3234000" />
       <workItem from="1535680982419" duration="74000" />
       <workItem from="1535810371376" duration="1619000" />
-      <workItem from="1535973844284" duration="3792000" />
+      <workItem from="1535973844284" duration="5118000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -743,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535811990439</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="some change about Login module">
+      <created>1535982550138</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1535982550138</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -779,10 +786,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360835000" />
+    <option name="totallyTimeSpent" value="362161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5021962" side_tool="true" weight="0.3167702" />
@@ -847,7 +855,8 @@
     <MESSAGE value="some changes" />
     <MESSAGE value="add admin manage" />
     <MESSAGE value="some change about Admin module" />
-    <option name="LAST_COMMIT_MESSAGE" value="some change about Admin module" />
+    <MESSAGE value="some change about Login module" />
+    <option name="LAST_COMMIT_MESSAGE" value="some change about Login module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -859,13 +868,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1196,20 +1198,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="118" column="55" lean-forward="true" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="176">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="35" />
           <folding>
-            <element signature="e#701#717#0" expanded="true" />
+            <element signature="e#1274#1290#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
+    <entry file="file://$PROJECT_DIR$/web/html/user/reg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+        <state relative-caret-position="258">
+          <caret line="124" column="98" selection-start-line="124" selection-start-column="98" selection-end-line="124" selection-end-column="98" />
         </state>
       </provider>
     </entry>

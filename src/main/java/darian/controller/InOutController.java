@@ -47,8 +47,10 @@ public class InOutController {
 
 	//注册控制
 	@RequestMapping("/register")
-	public String register(HttpServletRequest request) {
+	@ResponseBody
+	public Map register(HttpServletRequest request) {
 
+		Map<String,Object> map = new HashMap<String, Object>();
 		//邮箱账户，密码，昵称，当前时间
 		User user = new User();
 		user.setNickname(request.getParameter("nickname"));
@@ -61,11 +63,12 @@ public class InOutController {
 		boolean flag = userService.registerVerify(user);
 
 		if (flag) {
-			return "redirect:/html/user/login.html";
+			map.put("status","ok");
+			return map;
 		} else {
-			return "redirect:/views/404.html";
+			map.put("status","error");
+			return map;
 		}
-
 	}
 
 	//退出登录控制
