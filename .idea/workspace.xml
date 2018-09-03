@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a330fbf8-c353-44f4-a774-2b7c3031b14f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/serviceImpl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/user/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +43,29 @@
     <favorites_list name="SSM" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InOutController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-44">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding>
+                <element signature="e#701#717#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/res/layui/layui.all.js" />
         <option value="$PROJECT_DIR$/web/res/layui/lay/modules/tree.js" />
         <option value="$PROJECT_DIR$/web/js/ShowByClassId.js" />
         <option value="$PROJECT_DIR$/src/main/java/darian/entity/Comment.java" />
@@ -97,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CollectDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/html/jie/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" />
         <option value="$PROJECT_DIR$/web/html/common/header.html" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/service/UserService.java" />
@@ -127,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/main/java/darian/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/serviceImpl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/darian/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java" />
+        <option value="$PROJECT_DIR$/web/html/user/login.html" />
       </list>
     </option>
   </component>
@@ -178,6 +197,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,33 +247,6 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="darian" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,15 +266,25 @@
               <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,7 +516,8 @@
       <workItem from="1535546850129" duration="6277000" />
       <workItem from="1535636683743" duration="3234000" />
       <workItem from="1535680982419" duration="74000" />
-      <workItem from="1535810371376" duration="1494000" />
+      <workItem from="1535810371376" duration="1619000" />
+      <workItem from="1535973844284" duration="3792000" />
     </task>
     <task id="LOCAL-00001" summary="first commit(test)">
       <created>1534307881013</created>
@@ -730,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535639909893</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="some change about Admin module">
+      <created>1535811990439</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1535811990439</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -766,7 +779,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356918000" />
+    <option name="totallyTimeSpent" value="360835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -790,10 +803,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" weight="0.4627329" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.32763976" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3284553" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.20937042" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.20937042" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.17246597" />
@@ -833,7 +846,8 @@
     <MESSAGE value="2018/8/25 second commit(about collection update)" />
     <MESSAGE value="some changes" />
     <MESSAGE value="add admin manage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add admin manage" />
+    <MESSAGE value="some change about Admin module" />
+    <option name="LAST_COMMIT_MESSAGE" value="some change about Admin module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,13 +859,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/Define.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/darian/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -863,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1054,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/general.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/font.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1150,10 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1182,9 +1171,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/general.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!block;n#homeShow#0" />
+            <element signature="n#!!block;n#logOut#0" />
+            <element signature="n#!!block;n#showByEnable#0" />
+            <element signature="n#!!block;n#showAllByEc#0" />
+            <element signature="n#!!block;n#getUrlParam#0" />
+            <element signature="n#!!block;n#subComment#0" />
+            <element signature="n#!!block;n#showComment#0" />
+            <element signature="n#!!block;n#showComment_2#0" />
+            <element signature="n#!!block;n#showQianDao#0" />
+            <element signature="n#!!block;n#collect#0" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#disCollect#0" />
+            <element signature="n#!!block;n#dianZan#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/darian/controller/InOutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#701#717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="110" column="51" lean-forward="true" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
         </state>
       </provider>
     </entry>

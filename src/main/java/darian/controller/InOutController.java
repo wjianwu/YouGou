@@ -22,8 +22,10 @@ public class InOutController {
 
 	//登录控制
 	@RequestMapping("/login")
-	public String loginVerify(HttpServletRequest request) {
+	@ResponseBody
+	public Map loginVerify(HttpServletRequest request) {
 
+		Map<String,String> map = new HashMap<String, String>();
 		//邮箱账户，密码
 		String nickname = request.getParameter("nickname");
 		String password = request.getParameter("password");
@@ -35,9 +37,11 @@ public class InOutController {
 
 		if (user != null) {
 			session.setAttribute("user", user);
-			return "redirect:/html/index-2.html";
+			map.put("status","ok");
+			return map;
 		} else {
-			return "user/login";
+			map.put("status","error");
+			return map;
 		}
 	}
 

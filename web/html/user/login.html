@@ -9,6 +9,7 @@
     <meta name="description" content="YouGou社区给你提供强大的知识库">
     <link rel="stylesheet" href="../../res/layui/css/layui.css">
     <link rel="stylesheet" href="../../res/css/global.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -66,7 +67,7 @@
                 <div class="layui-tab-item layui-show">
                     <div class="layui-form layui-form-pane">
 
-                        <form action="/login" method="post">
+                        <form id="loginForm" method="post">
                             <div class="layui-form-item">
                                 <label for="L_email" class="layui-form-label">用户名</label>
                                 <div class="layui-input-inline">
@@ -92,11 +93,28 @@
                                 </div>
                             </div>
                             <div class="layui-form-item">
-                                <button class="layui-btn">立即登录</button>
+                                <button id="login" class="layui-btn" type="button">立即登录</button>
                                 <span style="padding-left:20px;">
                   			        <a href="forget.html">忘记密码？</a>
                                 </span>
                             </div>
+                            <script>
+                                $("#login").click(function () {
+                                    $.ajax({
+                                        type:"POST",
+                                        url:"/login",
+                                        data:$("#loginForm").serialize(),
+                                        dataType:"json",
+                                        success:function (data) {
+                                            if(data.status == "ok"){
+                                                location.href = "../index-2.html";
+                                            }else {
+                                                layer.msg("登录失败，请输入正确的用户名和密码",{icon:5});
+                                            }
+                                        }
+                                    })
+                                })
+                            </script>
                             <div class="layui-form-item fly-form-app">
                                 <span>或者使用社交账号登入</span>
                                 <a href="#" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})"
