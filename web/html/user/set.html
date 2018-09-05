@@ -19,24 +19,13 @@
         <a class="fly-logo" href="/html/index-2.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
-        <!--<ul class="layui-nav fly-nav layui-hide-xs">
-            <li class="layui-nav-item layui-this">
-                <a href="/html/index-2.html"><i class="iconfont icon-jiaoliu"></i>交流</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
-            </li>
-        </ul>-->
         <ul class="layui-nav fly-nav-user">
             <!-- 登入后的状态 -->
             <li class="layui-nav-item">
-                <a class="fly-nav-avatar" href="javascript:;">
+                <a class="fly-nav-avatar" href="javascript:void(0)">
                     <cite id="citeText" class="layui-hide-xs">游客</cite>
                     <i class="iconfont icon-renzheng layui-hide-xs" title="这里你是看不到的"></i>
-                    <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
+                    <!--<i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>-->
                     <img id="headUrl" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
                 </a>
                 <dl class="layui-nav-child">
@@ -162,8 +151,7 @@
                             <button id="uploadHead" type="button" class="layui-btn upload-img">
                                 <i class="layui-icon">&#xe67c;</i>上传头像
                             </button>
-                            <img id="bigHead"
-                                 src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+                            <img id="bigHead" src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
                             <span class="loading"></span>
                         </div>
                     </div>
@@ -242,7 +230,7 @@
                         <li class="fly-msg app-havebind">
                             <i class="iconfont icon-qq"></i>
                             <span>已成功绑定，您可以使用QQ帐号直接登录Fly社区，当然，您也可以</span>
-                            <a href="javascript:;" class="acc-unbind" type="qq_id">解除绑定</a>
+                            <a href="javascript:void(0)" class="acc-unbind" type="qq_id">解除绑定</a>
 
                             <!-- <a href="" onclick="layer.msg('正在绑定微博QQ', {icon:16, shade: 0.1, time:0})" class="acc-bind" type="qq_id">立即绑定</a>
                             <span>，即可使用QQ帐号登录Fly社区</span> -->
@@ -303,7 +291,9 @@
                 if (data.headUrl != null) {
                     $("#headUrl").attr("src", data.headUrl);
                 }
-                $("#bigHead").attr("src", data.headUrl);
+                if(data.headUrl != null){
+                    $("#bigHead").attr("src", data.headUrl);
+                }
                 $("#L_email").attr("value", data.email);
                 $("#L_username").attr("value", data.username);
                 $("input[name='sex'][value=" + data.sex + "]").attr("checked", true);
