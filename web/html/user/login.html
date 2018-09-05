@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../res/layui/css/layui.css">
     <link rel="stylesheet" href="../../res/css/global.css">
     <script src="../../js/jquery-3.2.1.min.js"></script>
+    <link href="../../css/jigsaw.css">
+    <script src="../../js/jigsaw.js"></script>
 </head>
 
 <body>
@@ -82,15 +84,9 @@
                                            autocomplete="off" class="layui-input">
                                 </div>
                             </div>
+
                             <div class="layui-form-item">
-                                <label for="L_vercode" class="layui-form-label">验证码</label>
-                                <div class="layui-input-inline">
-                                    <input type="text" id="L_vercode" name="vercode" required lay-verify="required"
-                                           placeholder="请回答后面的问题" autocomplete="off" class="layui-input">
-                                </div>
-                                <div class="layui-form-mid">
-                                    <span style="color: #c00;">1+1=？</span>
-                                </div>
+
                             </div>
                             <div class="layui-form-item">
                                 <button id="login" class="layui-btn" type="button">立即登录</button>
@@ -115,13 +111,6 @@
                                     })
                                 })
                             </script>
-                            <div class="layui-form-item fly-form-app">
-                                <span>或者使用社交账号登入</span>
-                                <a href="#" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})"
-                                   class="iconfont icon-qq" title="QQ登入"></a>
-                                <a href="#" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})"
-                                   class="iconfont icon-weibo" title="微博登入"></a>
-                            </div>
                         </form>
                     </div>
                 </div>
