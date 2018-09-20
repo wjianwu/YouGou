@@ -34,11 +34,4 @@ public class Email {
             e.printStackTrace();
         }
     }
-
-    @Test
-    public void testALL(){
-        double a = 1/3;
-        System.out.println(a);
-
-    }
 }
