@@ -50,7 +50,7 @@ public class UploadController {
 
 
         //实际本地目录
-        String path = "E:\\IDEA\\Projects\\SSM\\web\\upload\\";
+        String path = "D:\\in\\apache-tomcat-8.5.34\\upload\\";
         File dest = new File(path + filename);
 
         //上传文件名到数据库
