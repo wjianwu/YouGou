@@ -9,17 +9,6 @@
       width: 310px;
       margin: 100px auto;
     }
-    input {
-      display: block;
-      width: 290px;
-      line-height: 40px;
-      margin: 10px 0;
-      padding: 0 10px;
-      outline: none;
-      border:1px solid #c8cccf;
-      border-radius: 4px;
-      color:#6a6f77;
-    }
     #msg {
       width: 100%;
       line-height: 40px;
@@ -34,10 +23,10 @@
   </style>
 </head>
 <body>
-<div class="container">
-  <div id="captcha" style="position: relative"></div>
-  <div id="msg"></div>
-</div>
+  <div class="container">
+    <div id="captcha" style="position: relative"></div>
+    <div id="msg"></div>
+  </div>
 <script src="../../js/jigsaw.js"></script>
 <script>
   jigsaw.init(document.getElementById('captcha'), function () {

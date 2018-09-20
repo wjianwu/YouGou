@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../../res/layui/css/layui.css">
     <link rel="stylesheet" href="../../res/css/global.css">
     <script src="../../js/jquery-3.2.1.min.js"></script>
-    <link href="../../css/jigsaw.css">
-    <script src="../../js/jigsaw.js"></script>
+    <script src="../../js/general.js"></script>
 </head>
 
 <body>
@@ -21,20 +20,8 @@
         <a class="fly-logo" href="../../html/index.html">
             <img src="../../res/images/logo.png" alt="layui">
         </a>
-        <ul class="layui-nav fly-nav layui-hide-xs">
-            <li class="layui-nav-item layui-this">
-                <a href="#"><i class="iconfont icon-jiaoliu"></i>交流</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="#"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="#" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
-            </li>
-        </ul>
 
         <ul class="layui-nav fly-nav-user">
-            <!-- 未登入的状态 -->
             <li class="layui-nav-item">
                 <a class="iconfont icon-touxiang layui-hide-xs" href="login.html"></a>
             </li>
@@ -61,9 +48,7 @@
         <div class="layui-tab layui-tab-brief" lay-filter="user">
             <ul class="layui-tab-title">
                 <li class="layui-this">登入</li>
-                <li>
-                    <a href="reg.html">注册</a>
-                </li>
+                <li><a href="reg.html">注册</a></li>
             </ul>
             <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
                 <div class="layui-tab-item layui-show">
@@ -96,18 +81,18 @@
                             </div>
                             <script>
                                 $("#login").click(function () {
-                                    $.ajax({
-                                        type:"POST",
-                                        url:"/login",
-                                        data:$("#loginForm").serialize(),
-                                        dataType:"json",
-                                        success:function (data) {
-                                            if(data.status == "ok"){
-                                                location.href = "../index-2.html";
-                                            }else {
-                                                layer.msg("登录失败，请输入正确的用户名和密码",{icon:5});
+                                        $.ajax({
+                                            type:"POST",
+                                            url:"/login",
+                                            data:$("#loginForm").serialize(),
+                                            dataType:"json",
+                                            success:function (data) {
+                                                if(data.status == "ok"){
+                                                    location.href = "../index-2.html";
+                                                }else {
+                                                    layer.msg("登录失败，请输入正确的用户名和密码",{icon:5});
+                                                }
                                             }
-                                        }
                                     })
                                 })
                             </script>
